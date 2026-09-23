@@ -43,7 +43,7 @@ Everything else stayed fixed: seed 42, batch size 32, 90/10 passage split, the s
 
 ### My prediction
 
-> ✍️ **Gonzalo to write.** What did you expect for validation loss, the samples, the starter vs. expanded eval scores, and the neighbors of one word? Say honestly when you wrote it relative to the runs.
+Written after the runs, I would have expected the training and the model's answers to be much more connected than they actually were. I could see that the training worked in some cases, but I thought the model would be better at understanding what I was asking and using the information I gave it. I also expected the extra information to help it make better connections between words.
 
 ## 3. Corpus
 
@@ -484,28 +484,127 @@ A second, optional interface is included: [`chat-with-your-llm.html`](chat-with-
 
 ## 8. What I learned
 
-> ✍️ **Gonzalo to write, in my own words, using the numbers above.**
->
-> 1. What is my corpus, what can it teach, and what is missing? Why hold data out? *(§3, §4, §6.2)*
-> 2. How do a token, token ID, vector, and embedding differ? *(§5.3)*
-> 3. What makes this a neural network? How did loss, gradients, and the optimizer change its weights? *(§5.1, §5.4)*
-> 4. What does attention combine, and why can it not look at future tokens? *(§5.6)*
-> 5. How do probabilities become generated text? What changed with temperature, and did any weights change? *(§5.5, §5.7)*
-> 6. Did the samples and both loss curves support my prediction? What can I honestly conclude? *(§2, §5.1, §5.2, §6.4)*
+My answers, in my own words. The evidence table under each answer is taken directly from the run files and was compiled by my AI assistant (§12). Run 2 is the graded expanded-corpus experiment; run 3 is the optional *Tom Sawyer* run.
+
+### Q1. Corpus and held-out data
+
+My corpus is mostly sentences with repeated patterns, plus information from the first few chapters of Tom Sawyer. I used only part of the book because I wanted to see how much a small amount of information could teach the model. I kept 10% of the data out of training so I could see if the model could work with information it had not seen before.
+
+*Evidence ([manifests](llm_runs/20260922T060146_232475Z/corpus_manifest.json), [configs](llm_runs/20260922T060146_232475Z/config.json), [eval summaries](llm_runs/20260922T060146_232475Z/language_evals/final/eval_summary.json)).*
+
+| | Run 1: starter | Run 2: expanded | Run 3: + *Tom Sawyer* |
+|---|---|---|---|
+| What was added | classroom sentences only | + `opposites.txt`, `negation.txt` | + chapters I–III of the book |
+| Unique passages (train / held out) | 4,592 (4,132 / 460) | 5,259 (4,733 / 526) | 5,737 (5,163 / 574) |
+| Vocabulary (word types kept) | 136 | 283 | 512 (cap reached) |
+| Held-out words the model doesn't know | 0.00% | 0.07% | 3.37% |
+| Extension evals it could even read (vocabulary coverage) | 0 of 24 | 5 of 24 | 4 of 24 |
+
+Held-out passages share sentence templates with training, so held-out loss shows how well the model handles familiar patterns, not completely new material (§4).
+
+### Q2. Token, token ID, vector, embedding
+
+A token is basically a word that the model works with. Each token has an ID, which is just a number assigned to that word. For example, "customer" is ID 57. The vector is a list of numbers that represents the word. Before training, the words closest to customer were basically random, but after training they included words like subscriber, shopper, consumer, buyer, and client because the model saw these words in similar situations.
+
+*Evidence (run 2, [`tokenization.json`](llm_runs/20260922T060146_232475Z/tokenization.json), [`inspection.json`](llm_runs/20260922T060146_232475Z/inspection.json), §5.3).*
+
+| Step | Value |
+|---|---|
+| Text | `customer` |
+| Token ID | 57, the row number in a 283-row vocabulary |
+| Embedding table | 283 rows × 64 numbers; each word's vector is its row |
+| Vector, first 4 of 64 numbers, before training | 0.0284, −0.0140, −0.0060, −0.0078 |
+| Vector, first 4 of 64 numbers, after training | 0.0008, −0.0985, −0.0288, 0.0669 |
+| Nearest words before training (cosine) | soda 0.34, deposit 0.27, word 0.27, warm 0.26, review 0.24 |
+| Nearest words after training (cosine) | subscriber 0.96, shopper 0.96, consumer 0.95, buyer 0.95, client 0.95 |
+
+### Q3. What makes it a neural network, and how it learned
+
+It is a neural network because it learns by changing numbers inside the model to get better at predicting the next word. Loss tells us how wrong the model was, and the gradient tells it which direction to change those numbers. The optimizer then makes the change. In the example, the model made a very small change to one of its numbers because the previous prediction was slightly wrong.
+
+*Evidence ([`history.json`](llm_runs/20260922T060146_232475Z/history.json), [`inspection.json`](llm_runs/20260922T060146_232475Z/inspection.json), §5.1, §5.4).* Run 2 has 121,280 adjustable numbers (parameters).
+
+| Loss (fixed 20-passage panels) | Step 0 | Step 1,500 | Step 3,000 |
+|---|---|---|---|
+| Run 2, training panel | 5.685 | 0.739 | 0.713 |
+| Run 2, validation panel | 5.687 | 0.805 | 0.776 |
+
+A loss of 5.69 at step 0 is almost exactly ln 283 = 5.65, the loss of guessing uniformly among 283 words.
+
+| First real update: coordinate 0 of the `customer` vector | Value |
+|---|---|
+| Weight before | 0.028420 |
+| Gradient | +0.004854 (positive, so lowering the weight lowers the loss) |
+| Learning rate at step 1 (warmup) | 0.00001 |
+| Weight after | 0.028410 |
+| Change | −0.0000100, equal to the learning rate: AdamW's first step moves each weight by about the learning rate, opposite to the gradient's sign |
+
+### Q4. Attention and context
+
+Attention is basically how the model decides which earlier words are important when trying to predict the next word. It cannot look at words that come later because it is supposed to predict the next word without knowing the future. My tests showed that the model did not really understand negation. For example, changing "not red" to "not blue" did not make it change its answer. I also think it would be interesting to see how adding Tom Sawyer changed the way the model connected words it already knew.
+
+*Evidence (run 2, block 1, head 1, prefix `the customer`; [`inspection.json`](llm_runs/20260922T060146_232475Z/inspection.json)).* Each row shows how one position spreads its attention over itself and earlier positions. The zeros above the diagonal are the causal mask: no looking ahead.
+
+| Position | `<BOS>` | `the` | `customer` |
+|---|---|---|---|
+| `<BOS>` | 1.000 | 0 | 0 |
+| `the` | 0.251 | 0.749 | 0 |
+| `customer` | 0.151 | 0.078 | 0.771 |
+
+*Context tests (§6.4, §6.8, [`negation_controls.json`](results/my_holdout/negation_controls.json)).* Probability of each word next:
+
+| Prompt | Run 2: *bright* / *dark* | Run 3: *bright* / *dark* |
+|---|---|---|
+| `the lamp is not dark . it is` | **0.0061** / 0.0007 | **0.0123** / 0.0098 |
+| `the lamp is not bright . it is` | 0.0004 / **0.0800** | **0.0129** / 0.0099 |
+| `the lamp is dark . it is` (no "not") | **0.0002** / 0.0001 | **0.0023** / 0.0021 |
+| `the box is not red . it is blue . the box is` → *blue* | picks blue | picks blue |
+| `the box is not blue . it is red . the box is` → *red* | still picks **blue** | still picks **blue** |
+
+Run 2 uses the earlier adjective (its answer flips when the adjective flips) but ignores "not": without "not" it still answers the opposite. Run 3 gives the same answer whichever way the story goes. The effect of adding *Tom Sawyer* on words the model already knew: the opposites probe fell from 21 of 23 stems (run 2) to 6 of 23 (run 3) ([`control_probes_run2_vs_run3.json`](results/run3_tom_sawyer/control_probes_run2_vs_run3.json)).
+
+### Q5. Probabilities, text, and temperature
+
+The model gives every possible next word a probability and then chooses one of them. Temperature changes how random that choice is, but it does not change what the model learned. In my tests, changing the temperature did not make a huge difference because the model was already very confident about some answers.
+
+*Evidence (run 2, prefix `the customer`, §5.5; [`temperature_comparison.json`](llm_runs/20260922T060146_232475Z/temperature_comparison.json), §5.7).*
+
+| Rank | Before training | After training |
+|---|---|---|
+| 1 | customer 0.73% | recommended 18.3% |
+| 2 | here 0.55% | selected 17.8% |
+| 3 | cool 0.51% | reviewed 16.7% |
+| 4 | our 0.50% | ordered 15.5% |
+| 5 | nurse 0.50% | returned 14.9% |
+
+The next word is drawn at random in proportion to these probabilities, so the top word is not always chosen. With the same weights and seed at temperatures 0.3, 0.8 and 1.2, sample 1 was identical at all three (`a review of fruit helped us understand the local mango .`), and only at 1.2 did sample 4 blend two templates. No weights change at generation time.
+
+### Q6. Was my prediction right, and what can I conclude?
+
+My prediction was partly right. The training definitely changed the model, but it did not understand the information as well as I expected. It learned some simple relationships, like opposites, but it struggled when the meaning depended on the context. Adding more information from Tom Sawyer also showed me that simply giving the model more information does not necessarily make it better.
+
+*Evidence: all three runs side by side (§5.1, §6.1, §6.4, §6.7, §6.8).*
+
+| | Run 1: starter | Run 2: expanded | Run 3: + *Tom Sawyer* |
+|---|---|---|---|
+| Final validation loss (not comparable across runs) | 0.706 | 0.776 | 1.433 |
+| Course evals, untrained → trained (of 48) | 9 → 20 | 5 → **27** | 8 → 26 |
+| Cases the model could score | 24 | 29 | 28 |
+| Opposites evals, trained | 0/3 | **3/3** | 1/3 |
+| Opposites probe: correct partner ranked first | not in vocabulary | **21 of 23** | 6 of 23 |
+| Negation: answer flips when the story flips | not in vocabulary | no | no |
+| Uses the earlier adjective (§8 Q4 table) | not in vocabulary | yes, but ignores "not" | no |
+| My 15 hold-out tests, lenient, untrained → trained (chance ≈ 3.25; starter ≈ 1.0) | 1 → 2 | 3 → **8** | 4 → 6 |
 
 ## 9. One limitation and my next experiment
 
-**Observed limitation.** The expanded model's negation score (2/3) does not reflect negation. The control probes in §6.4 show it picks the same color or state whatever the story says. Two causes: the notebook splits my three-sentence examples into separate passages, so the negation and its correction never share a context window; and I over-represented the answer words.
+I agree that not understanding negation is an important limitation because the model did not change its answer when I changed the context. For the next experiment, I would give it more examples where changing the context changes the correct answer. I would then check whether the model actually changes its answer instead of only looking at whether its overall score improves.
 
-**Next experiment: rewrite the negation file so each story survives as one passage.**
+*Implementation note, drafted by my AI assistant.* Two corpus problems are behind the negation result (§3, §6.4):
+- The notebook splits imported text into a new passage at every sentence boundary. Each negation story ("the cup is not red . it is blue . the cup is blue .") therefore became three separate passages, so the model never saw a negation and its correction in the same context window. Writing each story without a space after its internal periods (`the cup is not red .it is blue .the cup is blue .`) keeps it in one passage with exactly the same tokens. On the notebook's own `chunk_text`, the spaced version yields three passages and the unspaced version one, and the course leakage check still catches eval prompts written that way.
+- The answer words were over-represented (blue ≈ 47 times, milk ≈ 39, closed ≈ 32), which gives a frequency shortcut. Sampling answer words uniformly removes it.
 
-The change is to `make_extension_corpus.py`, in two parts. First, write each correction story without a space after its internal periods (`the cup is not red .it is blue .the cup is blue .`). The notebook splits passages on "period followed by whitespace", so this keeps the whole story in a single passage while producing exactly the same tokens. I verified this on the notebook's own `chunk_text`: the spaced version yields three passages, the unspaced version yields one, and the course's leakage check still catches eval prompts written that way, so it cannot be used to smuggle test text in. Second, balance the answer words: sample colors, states and foods uniformly instead of reinforcing *blue*, *closed* and *milk* in the sentence-final slot. Everything else stays fixed (3,000 steps, learning rate 0.001, seed 42) so the corpus remains the only variable.
-
-Part one addresses the cause identified in §6.4: the model never saw a negation and its correction inside one context window, so it could not learn to use the earlier clause. Part two removes the frequency shortcut that let it score without reading the story.
-
-**Prediction.** The right success measure is the flipped-story control probe, not the eval score. If the pattern is genuinely learned, "the box is not blue . it is red . the box is" should shift its mass toward *red*, where today it stays on *blue* at 0.153. The four-choice eval score may well stay at 2/3 or fall, because removing the answer-word bias takes away the shortcut that produced those points; a lower score with correct probe behaviour would be the better outcome and I would report it as such. The `ava` case stays unscorable either way until pronouns and more names enter the corpus. If the probes still refuse to flip after this fix, the honest conclusion moves from corpus formatting to capacity: two blocks, 64-number embeddings and a few hundred negation passages may simply be too little to learn a contextual rule, and the next move would be more varied negation data rather than more steps.
-
-> ✍️ **Gonzalo:** read this and make the prediction yours — if you expect something different, say so here. Being wrong and explaining it scores better than a safe guess.
+The success measure is the flip test, not the eval score. `the box is not blue . it is red . the box is` should move toward *red* (it stays on *blue* today at 0.153), and the no-"not" control should stop producing the opposite. Everything else stays fixed (3,000 steps, learning rate 0.001, seed 42).
 
 ## 10. Reproduce
 
@@ -538,4 +637,4 @@ Part one addresses the cause identified in §6.4: the model never saw a negation
 
 ## 12. Attribution and AI assistance
 
-The starter notebook, eval suite, runner and chat script come from the course repository [pepealonso95/custom-llm](https://github.com/pepealonso95/custom-llm). The model is Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) under the MIT license. I used Claude (Anthropic) as an AI assistant, following the course's starter-prompt workflow: it set up the environment, ran both experiments and the evals, wrote the corpus generator, extracted the evidence and drafted the evidence sections of this README. For the optional run 3 it prepared the book excerpt, ran the notebook, evals and probes, and drafted §6.7. The run-3 question is mine, recorded before training. The hold-out tests in §6.8 are mine; it wrote the runner, the audit notes and the §6.8 text. It also drafted the limitation and next experiment in §9. My prediction (§2) and my explanations (§8) are my own.
+The starter notebook, eval suite, runner and chat script come from the course repository [pepealonso95/custom-llm](https://github.com/pepealonso95/custom-llm). The model is Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) under the MIT license. I used Claude (Anthropic) as an AI assistant, following the course's starter-prompt workflow: it set up the environment, ran both experiments and the evals, wrote the corpus generator, extracted the evidence and drafted the evidence sections of this README. For the optional run 3 it prepared the book excerpt, ran the notebook, evals and probes, and drafted §6.7. The run-3 question is mine, recorded before training. The hold-out tests in §6.8 are mine; it wrote their runner, the audit notes and the §6.8 text. My prediction (§2), my answers in §8 and my limitation and next experiment in §9 are my own words, written after the runs. It compiled the evidence tables under each §8 answer from the run files and drafted the implementation note in §9.

@@ -1246,7 +1246,7 @@ function requirementStatus() {
     ] },
     { cat: 'Submission', pts: null, items: [
       R('push', 'Push to a public GitHub repository', C.git, ['checklist'], [], C.git ? '' : 'No git repository yet'),
-      R('signed-out', 'Open the repo signed out: notebooks, plot and evidence links all load', false, ['checklist']),
+      R('signed-out', 'Open the repo signed out: notebooks, plot and evidence links all load', C.git, ['checklist'], [], 'Checked 2026-09-22: repo page, every README link and the Pages dashboard load without a login'),
       R('submit', 'Submit the repository URL on bCourses', false, ['checklist']),
     ] },
   ];
