@@ -35,7 +35,7 @@ Both at 3,000 steps, learning rate 0.001, seed 42. Executed notebooks are `custo
 2. **Paste his prediction into the "My prediction" markdown cell** of both executed notebooks. Edit markdown only; do not re-execute, or the outputs are lost.
 3. **Optional:** he runs `chat.py` locally and takes a live screenshot to accompany `results/chat_expanded.png` (currently a faithful render of a real captured session, labelled as such).
 4. **Review the AI-assistance paragraph** in README §12 against course policy.
-5. **Push to a new public GitHub repo and submit the URL on bCourses.** Nothing has been pushed yet; there is no git history in this folder.
+5. **Submit the URL on bCourses.** Pushed to https://github.com/gonzalomadrazo-pixel/custom-llm-project (public; `main` and `fundamentals_ai` identical; checked signed out 2026-09-22). Dashboard is live on GitHub Pages at https://gonzalomadrazo-pixel.github.io/custom-llm-project/dashboard.html (served from `main`, so push to `main` to update it).
 
 ## Dashboard
 
@@ -81,14 +81,6 @@ To reproduce a full experiment, open `custom_llm.ipynb` and Run All. For the sta
 
 ## Push
 
-Create an empty public repo on GitHub first (no README), then:
-
-```bash
-git init -b main
-git add .
-git commit -m "Class 4: custom nanoGPT, two corpus experiments, 48 evals, chat"
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-git push -u origin main
-```
-
-Afterwards, open the repository signed out and confirm the notebooks render with their outputs, `training_curves.svg` displays in README §5.1, and the evidence links resolve.
+Remote `origin` is set; both `main` and `fundamentals_ai` track the submission. After changes, rebuild the dashboard with
+`python build_dashboard.py --repo-url https://github.com/gonzalomadrazo-pixel/custom-llm-project/blob/main`, commit, then
+`git push origin fundamentals_ai && git push origin fundamentals_ai:main`.
