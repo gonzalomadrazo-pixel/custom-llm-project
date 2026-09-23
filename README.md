@@ -87,7 +87,7 @@ Evidence for both is in §6.4, and the fix is my next experiment (§9).
 |---|---|---|
 | Completed steps / interrupted | 3,000 / no | 3,000 / no |
 | Training time | 26.6 s | 28.1 s |
-| Hardware | Linux x86_64 container, 1 CPU core, PyTorch 2.4.1 (CPU) | same |
+| Hardware | Linux x86_64 container, 1 CPU core, PyTorch 2.4.1 CPU, run by my AI assistant in an earlier session (the PyTorch version is recorded in the notebook output) | same |
 | Parameters | 111,872 | 121,280 |
 | Vocabulary (incl. `<UNK>`, `<BOS>`, `<EOS>`) | 136 | 283 |
 | Unique passages / train / validation | 4,592 / 4,132 / 460 | 5,259 / 4,733 / 526 |
@@ -364,7 +364,7 @@ python run_evals.py --model llm_runs/20260922T060146_232475Z/model.pt --output r
 python run_evals.py --model llm_runs/20260922T060146_232475Z/model_untrained.pt --stage untrained --output results/my-rerun-untrained
 ```
 
-Replace the run folder with `llm_runs/20260922T060103_576381Z` for the starter model. My reruns in [`results/rerun-expanded-final`](results/rerun-expanded-final) and [`results/rerun-expanded-untrained`](results/rerun-expanded-untrained) match the notebook's per-case results exactly.
+Replace the run folder with `llm_runs/20260922T060103_576381Z` for the starter model. My reruns in [`results/rerun-expanded-final`](results/rerun-expanded-final) and [`results/rerun-expanded-untrained`](results/rerun-expanded-untrained) match the notebook's per-case results exactly. A rerun on a different machine was checked on 2026-09-22 from a fresh clone of this repository (Apple M1, PyTorch 2.14.0): all 48 picks, scores, statuses and choice probabilities matched, and the total was again 27/48. The free-continuation text differed in 30 cases. Those continuations are sampled, and a different PyTorch version or platform draws a different random stream from the same seed. The scores do not depend on sampling.
 
 ### 6.7 Optional run 3: a novel excerpt with no teaching
 
