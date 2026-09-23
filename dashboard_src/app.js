@@ -1038,6 +1038,7 @@ RENDER.evals = function () {
     </div>
     <div class="scroll-x"><table id="ev-table"><thead><tr><th>ID</th><th>Category</th><th>Prompt → answer</th>${cols.map(c => `<th style="text-align:center" title="${esc(c.r.label)} ${c.s}"><span class="swatch" style="background:${runColor(c.i)}"></span><br>${c.s === 'final' ? 'T' : 'U'}</th>`).join('')}</tr></thead><tbody></tbody></table></div>
   </div>
+  <div class="panel" id="p-mytests">${myTestsHTML()}</div>
   <div class="grid g2">
     <div class="panel" id="p-probes">
       <div class="panel-head"><h2>Control probes: coverage or learned pattern?</h2></div>
@@ -1067,6 +1068,28 @@ RENDER.evals = function () {
   $('#ev-out').addEventListener('change', e => { EV.outcome = e.target.value; caseRows(); });
   caseRows();
 };
+function myTestsHTML() {
+  const T = DATA.my_tests; if (!T) return '<p class="note">No personal tests yet. Add evals/my_holdout.json and run python run_my_tests.py.</p>';
+  const runName = id => (RUNS.find(r => r.id === id) || { label: id }).label;
+  const cols = T.summary.map(s => ({ ...s, i: RUNS.findIndex(r => r.id === s.run) }));
+  const mark = r => r.lenient_status === 'scored' || r.lenient_status === 'tie'
+    ? `<span class="mark ${r.lenient_score ? 'pass' : 'fail'}" title="${esc(`picked ${r.lenient_pick || 'tie'} from ${r.lenient_choices_used} choices it knows`)}">${r.lenient_score ? '✓' : '✗'}</span><sub class="faint">${r.lenient_choices_used}</sub>`
+    : `<span class="mark unk" title="${esc(r.lenient_status.replace('_', ' ') + ': ' + [...r.unknown_prompt_words, ...r.unknown_choice_words].join(', '))}">?</span>`;
+  return `<div class="panel-head"><h2>Your own hold-out tests</h2><p>${T.suite.cases.length} cases you wrote, never used to build any corpus. From ${fileLink('evals/my_holdout.json')} and ${fileLink('results/my_holdout/results.csv', 'results.csv')}.</p></div>
+    <div class="scroll-x"><table><thead><tr><th>Model</th><th>Stage</th><th class="n">Strict (course rule)</th><th class="n">Lenient</th><th class="n">Chance</th></tr></thead><tbody>
+    ${cols.map(c => `<tr><td><span class="swatch" style="background:${runColor(c.i)}"></span> ${esc(runName(c.run))}</td><td>${c.stage}</td><td class="n">${c.strict_correct}/${c.total} <span class="faint">(${c.strict_scorable} scorable)</span></td><td class="n"><b>${c.lenient_correct}</b>/${c.total} <span class="faint">(${c.lenient_scorable} scorable)</span></td><td class="n">${c.lenient_chance_expected}</td></tr>`).join('')}
+    </tbody></table></div>
+    <p class="note" style="margin:8px 0 14px">Lenient: unknown prompt words become &lt;UNK&gt; and choices the model cannot spell are dropped. The small number beside each mark is how many choices were left: with 2 left, a guess is right half the time. Chance = the score expected from guessing among the remaining choices.</p>
+    <div class="scroll-x"><table><thead><tr><th>Case</th><th>Kind</th><th>Prompt → answer</th>${cols.map(c => `<th style="text-align:center"><span class="swatch" style="background:${runColor(c.i)}"></span><br>${c.stage === 'trained' ? 'T' : 'U'}</th>`).join('')}</tr></thead><tbody>
+    ${T.suite.cases.map(k => `<tr><td class="mono">${k.id}</td><td style="font-size:12px">${esc(k.kind)}</td><td><span class="mono" style="font-size:12.5px">${esc(k.prompt)} <b style="color:var(--accent)">${esc(k.answer)}</b></span>${k.audit ? `<br><span class="note" style="color:var(--warn)">${esc(k.audit)}</span>` : ''}</td>${cols.map(c => { const r = T.results.find(x => x.id === k.id && x.run === c.run && x.stage === c.stage); return `<td style="text-align:center;white-space:nowrap">${r ? mark(r) : ''}</td>`; }).join('')}</tr>`).join('')}
+    </tbody></table></div>
+    <h3 style="margin:16px 0 8px">Does it read “not”? Flip and no-“not” controls (trained models)</h3>
+    <div class="scroll-x"><table><thead><tr><th>Model</th><th>Case</th><th>Original</th><th>Flipped</th><th>Without “not”</th><th>Verdict</th></tr></thead><tbody>
+    ${T.controls.filter(c => c.stage === 'trained' && c.status === 'scored').map(c => { const f = (d, want) => `${esc(want)} ${prob(d.probs[want])} · ${esc(want === c.A ? c.B : c.A)} ${prob(d.probs[want === c.A ? c.B : c.A])}`;
+      return `<tr><td>${esc(runName(c.run))}</td><td class="mono">${c.id}</td><td class="mono" style="font-size:12px">${f(c.original, c.A)}</td><td class="mono" style="font-size:12px">${f(c.flip, c.B)}</td><td class="mono" style="font-size:12px">${f(c.no_not, c.B)}</td><td style="font-size:12.5px">${esc(c.verdict)}</td></tr>`; }).join('')}
+    </tbody></table></div>
+    <p class="note" style="margin-top:8px">Each cell lists the word the story calls for first, then its opposite. A model that reads “not” prefers the first word in all three columns.</p>`;
+}
 function caseMark(x) {
   if (!x) return '<span class="faint">·</span>';
   if (x.status !== 'scored') return `<span class="mark unk" title="${esc('unscorable: ' + [...(x.unknown_prompt_words || []), ...(x.unknown_choices || [])].join(', '))}">?</span>`;

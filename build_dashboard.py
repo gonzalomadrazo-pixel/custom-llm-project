@@ -245,6 +245,11 @@ def main():
         "assignment": split_markdown(ROOT / "ASSIGNMENT.md", r"#{1,2}"),
         "readme": split_markdown(ROOT / "README.md"),
         "checks": build_checks(suite, runs),
+        "my_tests": {"suite": load(ROOT / "evals/my_holdout.json"),
+                     "results": load(ROOT / "results/my_holdout/results.json")["rows"],
+                     "summary": load(ROOT / "results/my_holdout/summary.json")["summaries"],
+                     "controls": load(ROOT / "results/my_holdout/negation_controls.json")["controls"]}
+        if (ROOT / "results/my_holdout/results.json").exists() else None,
         "chat_record": load(ROOT / "results/chat_expanded.json")
         if (ROOT / "results/chat_expanded.json").exists() else None,
     }

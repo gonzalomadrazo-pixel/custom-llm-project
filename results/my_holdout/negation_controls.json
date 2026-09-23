@@ -1,0 +1,479 @@
+{
+  "suite": "evals/my_holdout.json",
+  "suite_sha256": "a17c19c3224ff603a6f138c8cc61352981f04b91c9f5d66b9e3da8377962e666",
+  "scoring": "Inference only: no weights change, and the tests never enter any corpus.",
+  "controls": [
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained",
+      "id": "my_04",
+      "status": "word_unknown",
+      "A": "bright",
+      "B": "dark"
+    },
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained",
+      "id": "my_05",
+      "status": "word_unknown",
+      "A": "dirty",
+      "B": "clean"
+    },
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained",
+      "id": "my_06",
+      "status": "word_unknown",
+      "A": "full",
+      "B": "empty"
+    },
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "trained",
+      "id": "my_04",
+      "status": "word_unknown",
+      "A": "bright",
+      "B": "dark"
+    },
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "trained",
+      "id": "my_05",
+      "status": "word_unknown",
+      "A": "dirty",
+      "B": "clean"
+    },
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "trained",
+      "id": "my_06",
+      "status": "word_unknown",
+      "A": "full",
+      "B": "empty"
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained",
+      "id": "my_04",
+      "status": "scored",
+      "A": "bright",
+      "B": "dark",
+      "noun_unknown": [],
+      "original": {
+        "prompt": "the lamp is not dark . it is",
+        "probs": {
+          "bright": 0.0035,
+          "dark": 0.0044
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the lamp is not bright . it is",
+        "probs": {
+          "bright": 0.0035,
+          "dark": 0.0044
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the lamp is dark . it is",
+        "probs": {
+          "bright": 0.0032,
+          "dark": 0.004
+        },
+        "prefers_expected": true
+      },
+      "verdict": "same answer whatever the story says (ignores the context)"
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained",
+      "id": "my_05",
+      "status": "scored",
+      "A": "dirty",
+      "B": "clean",
+      "noun_unknown": [
+        "room"
+      ],
+      "original": {
+        "prompt": "the room is not clean . it is",
+        "probs": {
+          "dirty": 0.0027,
+          "clean": 0.0043
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the room is not dirty . it is",
+        "probs": {
+          "dirty": 0.0028,
+          "clean": 0.0044
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the room is clean . it is",
+        "probs": {
+          "dirty": 0.0038,
+          "clean": 0.0043
+        },
+        "prefers_expected": true
+      },
+      "verdict": "same answer whatever the story says (ignores the context)"
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained",
+      "id": "my_06",
+      "status": "scored",
+      "A": "full",
+      "B": "empty",
+      "noun_unknown": [
+        "bag"
+      ],
+      "original": {
+        "prompt": "the bag is not empty . it is",
+        "probs": {
+          "full": 0.0035,
+          "empty": 0.0042
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the bag is not full . it is",
+        "probs": {
+          "full": 0.0035,
+          "empty": 0.0043
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the bag is empty . it is",
+        "probs": {
+          "full": 0.0037,
+          "empty": 0.0036
+        },
+        "prefers_expected": false
+      },
+      "verdict": "inconsistent"
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "trained",
+      "id": "my_04",
+      "status": "scored",
+      "A": "bright",
+      "B": "dark",
+      "noun_unknown": [],
+      "original": {
+        "prompt": "the lamp is not dark . it is",
+        "probs": {
+          "bright": 0.0061,
+          "dark": 0.0007
+        },
+        "prefers_expected": true
+      },
+      "flip": {
+        "prompt": "the lamp is not bright . it is",
+        "probs": {
+          "bright": 0.0004,
+          "dark": 0.08
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the lamp is dark . it is",
+        "probs": {
+          "bright": 0.0002,
+          "dark": 0.0001
+        },
+        "prefers_expected": false
+      },
+      "verdict": "uses the earlier adjective but ignores 'not' (answers its opposite either way)"
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "trained",
+      "id": "my_05",
+      "status": "scored",
+      "A": "dirty",
+      "B": "clean",
+      "noun_unknown": [
+        "room"
+      ],
+      "original": {
+        "prompt": "the room is not clean . it is",
+        "probs": {
+          "dirty": 0.1284,
+          "clean": 0.0126
+        },
+        "prefers_expected": true
+      },
+      "flip": {
+        "prompt": "the room is not dirty . it is",
+        "probs": {
+          "dirty": 0.0196,
+          "clean": 0.1397
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the room is clean . it is",
+        "probs": {
+          "dirty": 0.0138,
+          "clean": 0.0004
+        },
+        "prefers_expected": false
+      },
+      "verdict": "uses the earlier adjective but ignores 'not' (answers its opposite either way)"
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "trained",
+      "id": "my_06",
+      "status": "scored",
+      "A": "full",
+      "B": "empty",
+      "noun_unknown": [
+        "bag"
+      ],
+      "original": {
+        "prompt": "the bag is not empty . it is",
+        "probs": {
+          "full": 0.1224,
+          "empty": 0.0063
+        },
+        "prefers_expected": true
+      },
+      "flip": {
+        "prompt": "the bag is not full . it is",
+        "probs": {
+          "full": 0.0048,
+          "empty": 0.1743
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the bag is empty . it is",
+        "probs": {
+          "full": 0.0817,
+          "empty": 0.0076
+        },
+        "prefers_expected": false
+      },
+      "verdict": "uses the earlier adjective but ignores 'not' (answers its opposite either way)"
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained",
+      "id": "my_04",
+      "status": "scored",
+      "A": "bright",
+      "B": "dark",
+      "noun_unknown": [],
+      "original": {
+        "prompt": "the lamp is not dark . it is",
+        "probs": {
+          "bright": 0.0018,
+          "dark": 0.0018
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the lamp is not bright . it is",
+        "probs": {
+          "bright": 0.0018,
+          "dark": 0.0019
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the lamp is dark . it is",
+        "probs": {
+          "bright": 0.0022,
+          "dark": 0.0021
+        },
+        "prefers_expected": false
+      },
+      "verdict": "inconsistent"
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained",
+      "id": "my_05",
+      "status": "scored",
+      "A": "dirty",
+      "B": "clean",
+      "noun_unknown": [
+        "room"
+      ],
+      "original": {
+        "prompt": "the room is not clean . it is",
+        "probs": {
+          "dirty": 0.0016,
+          "clean": 0.0016
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the room is not dirty . it is",
+        "probs": {
+          "dirty": 0.0016,
+          "clean": 0.0016
+        },
+        "prefers_expected": false
+      },
+      "no_not": {
+        "prompt": "the room is clean . it is",
+        "probs": {
+          "dirty": 0.0023,
+          "clean": 0.0014
+        },
+        "prefers_expected": false
+      },
+      "verdict": "same answer whatever the story says (ignores the context)"
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained",
+      "id": "my_06",
+      "status": "scored",
+      "A": "full",
+      "B": "empty",
+      "noun_unknown": [
+        "bag"
+      ],
+      "original": {
+        "prompt": "the bag is not empty . it is",
+        "probs": {
+          "full": 0.0017,
+          "empty": 0.0017
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the bag is not full . it is",
+        "probs": {
+          "full": 0.0017,
+          "empty": 0.0018
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the bag is empty . it is",
+        "probs": {
+          "full": 0.0018,
+          "empty": 0.0022
+        },
+        "prefers_expected": true
+      },
+      "verdict": "inconsistent"
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "trained",
+      "id": "my_04",
+      "status": "scored",
+      "A": "bright",
+      "B": "dark",
+      "noun_unknown": [],
+      "original": {
+        "prompt": "the lamp is not dark . it is",
+        "probs": {
+          "bright": 0.0123,
+          "dark": 0.0098
+        },
+        "prefers_expected": true
+      },
+      "flip": {
+        "prompt": "the lamp is not bright . it is",
+        "probs": {
+          "bright": 0.0129,
+          "dark": 0.0099
+        },
+        "prefers_expected": false
+      },
+      "no_not": {
+        "prompt": "the lamp is dark . it is",
+        "probs": {
+          "bright": 0.0023,
+          "dark": 0.0021
+        },
+        "prefers_expected": false
+      },
+      "verdict": "same answer whatever the story says (ignores the context)"
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "trained",
+      "id": "my_05",
+      "status": "scored",
+      "A": "dirty",
+      "B": "clean",
+      "noun_unknown": [
+        "room"
+      ],
+      "original": {
+        "prompt": "the room is not clean . it is",
+        "probs": {
+          "dirty": 0.0256,
+          "clean": 0.0169
+        },
+        "prefers_expected": true
+      },
+      "flip": {
+        "prompt": "the room is not dirty . it is",
+        "probs": {
+          "dirty": 0.0232,
+          "clean": 0.0189
+        },
+        "prefers_expected": false
+      },
+      "no_not": {
+        "prompt": "the room is clean . it is",
+        "probs": {
+          "dirty": 0.0067,
+          "clean": 0.0028
+        },
+        "prefers_expected": false
+      },
+      "verdict": "same answer whatever the story says (ignores the context)"
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "trained",
+      "id": "my_06",
+      "status": "scored",
+      "A": "full",
+      "B": "empty",
+      "noun_unknown": [
+        "bag"
+      ],
+      "original": {
+        "prompt": "the bag is not empty . it is",
+        "probs": {
+          "full": 0.0105,
+          "empty": 0.0286
+        },
+        "prefers_expected": false
+      },
+      "flip": {
+        "prompt": "the bag is not full . it is",
+        "probs": {
+          "full": 0.011,
+          "empty": 0.0418
+        },
+        "prefers_expected": true
+      },
+      "no_not": {
+        "prompt": "the bag is empty . it is",
+        "probs": {
+          "full": 0.0045,
+          "empty": 0.0128
+        },
+        "prefers_expected": true
+      },
+      "verdict": "same answer whatever the story says (ignores the context)"
+    }
+  ]
+}

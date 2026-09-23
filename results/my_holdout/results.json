@@ -1,0 +1,2707 @@
+{
+  "suite": "evals/my_holdout.json",
+  "suite_sha256": "a17c19c3224ff603a6f138c8cc61352981f04b91c9f5d66b9e3da8377962e666",
+  "scoring": "Inference only: no weights change, and the tests never enter any corpus.",
+  "rows": [
+    {
+      "id": "my_01",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of cold is",
+      "answer": "hot",
+      "unknown_prompt_words": [
+        "cold",
+        "is",
+        "opposite"
+      ],
+      "unknown_choice_words": [
+        "dark",
+        "hot",
+        "small",
+        "young"
+      ],
+      "choice_logprobs": {
+        "hot": -4.3921,
+        "dark": -4.3921,
+        "small": -4.3921,
+        "young": -4.3921
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_02",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of empty is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "empty",
+        "is",
+        "opposite"
+      ],
+      "unknown_choice_words": [
+        "clean",
+        "fast",
+        "full",
+        "quiet"
+      ],
+      "choice_logprobs": {
+        "full": -4.3921,
+        "quiet": -4.3921,
+        "clean": -4.3921,
+        "fast": -4.3921
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_03",
+      "kind": "memory",
+      "skill": "context",
+      "prompt": "the customer paid the bill . the customer",
+      "answer": "paid",
+      "unknown_prompt_words": [
+        "bill",
+        "paid"
+      ],
+      "unknown_choice_words": [
+        "closed",
+        "opened",
+        "paid",
+        "walked"
+      ],
+      "choice_logprobs": {
+        "paid": -4.9001,
+        "opened": -4.9001,
+        "closed": -4.9001,
+        "walked": -4.9001
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_04",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the lamp is not dark . it is",
+      "answer": "bright",
+      "unknown_prompt_words": [
+        "dark",
+        "is",
+        "it",
+        "lamp",
+        "not"
+      ],
+      "unknown_choice_words": [
+        "bright",
+        "cold",
+        "empty",
+        "small"
+      ],
+      "choice_logprobs": {
+        "bright": -4.3564,
+        "cold": -4.3564,
+        "small": -4.3564,
+        "empty": -4.3564
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_05",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the room is not clean . it is",
+      "answer": "dirty",
+      "unknown_prompt_words": [
+        "clean",
+        "is",
+        "it",
+        "not",
+        "room"
+      ],
+      "unknown_choice_words": [
+        "dirty",
+        "fast",
+        "full",
+        "young"
+      ],
+      "choice_logprobs": {
+        "dirty": -4.3564,
+        "young": -4.3564,
+        "fast": -4.3564,
+        "full": -4.3564
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_06",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the bag is not empty . it is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "bag",
+        "empty",
+        "is",
+        "it",
+        "not"
+      ],
+      "unknown_choice_words": [
+        "dark",
+        "full",
+        "old",
+        "quiet"
+      ],
+      "choice_logprobs": {
+        "full": -4.3564,
+        "dark": -4.3564,
+        "old": -4.3564,
+        "quiet": -4.3564
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_07",
+      "kind": "new",
+      "skill": "context",
+      "prompt": "the student read the book . the student",
+      "answer": "read",
+      "unknown_prompt_words": [
+        "book",
+        "read"
+      ],
+      "unknown_choice_words": [
+        "closed",
+        "cooked",
+        "drove",
+        "read"
+      ],
+      "choice_logprobs": {
+        "read": -4.7462,
+        "closed": -4.7462,
+        "cooked": -4.7462,
+        "drove": -4.7462
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_08",
+      "kind": "transfer",
+      "skill": "opposite",
+      "prompt": "the opposite of bright is",
+      "answer": "dark",
+      "unknown_prompt_words": [
+        "bright",
+        "is",
+        "opposite"
+      ],
+      "unknown_choice_words": [
+        "clean",
+        "dark",
+        "full",
+        "young"
+      ],
+      "choice_logprobs": {
+        "dark": -4.3921,
+        "full": -4.3921,
+        "young": -4.3921,
+        "clean": -4.3921
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_09",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the report about the teacher explains the",
+      "answer": "lesson",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "food",
+        "hotel"
+      ],
+      "choice_logprobs": {
+        "lesson": -4.7718,
+        "customer": -4.9362,
+        "hotel": -4.9381,
+        "food": -4.9381
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "lesson",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_10",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the worker entered the building and went to the",
+      "answer": "office",
+      "unknown_prompt_words": [
+        "building",
+        "entered",
+        "to",
+        "went",
+        "worker"
+      ],
+      "unknown_choice_words": [
+        "food",
+        "river"
+      ],
+      "choice_logprobs": {
+        "office": -5.2185,
+        "river": -4.9956,
+        "food": -4.9956,
+        "student": -4.7657
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "student",
+      "lenient_score": 0,
+      "lenient_choices_used": 2,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_11",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "aunt polly told tom to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "aunt",
+        "polly",
+        "to",
+        "told",
+        "tom",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "fence",
+        "garden",
+        "house",
+        "river"
+      ],
+      "choice_logprobs": {
+        "fence": -4.9676,
+        "river": -4.9676,
+        "garden": -4.9676,
+        "house": -4.9676
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_12",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom was hiding when aunt polly",
+      "answer": "found him",
+      "unknown_prompt_words": [
+        "aunt",
+        "hiding",
+        "polly",
+        "tom",
+        "when"
+      ],
+      "unknown_choice_words": [
+        "called",
+        "followed",
+        "found",
+        "him"
+      ],
+      "choice_logprobs": {
+        "found him": -8.8688,
+        "called him": -8.8688,
+        "helped him": -9.3918,
+        "followed him": -8.8688
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_13",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom made the other boys want to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "boys",
+        "made",
+        "other",
+        "to",
+        "tom",
+        "want",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "fence",
+        "garden",
+        "house"
+      ],
+      "choice_logprobs": {
+        "fence": -4.9992,
+        "house": -4.9992,
+        "school": -4.8163,
+        "garden": -4.9992
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_14",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "ben rogers was pretending to be the",
+      "answer": "big mississippi steamboat",
+      "unknown_prompt_words": [
+        "be",
+        "ben",
+        "pretending",
+        "rogers",
+        "to"
+      ],
+      "unknown_choice_words": [
+        "big",
+        "farmer",
+        "mississippi",
+        "steamboat"
+      ],
+      "choice_logprobs": {
+        "big mississippi steamboat": -13.7504,
+        "school teacher": -9.6593,
+        "farmer": -4.9749,
+        "doctor": -4.9757
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_15",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom's aunt gave tom a",
+      "answer": "piece of cake",
+      "unknown_prompt_words": [
+        "aunt",
+        "gave",
+        "tom",
+        "tom's"
+      ],
+      "unknown_choice_words": [
+        "book",
+        "brush",
+        "cake",
+        "coin",
+        "piece"
+      ],
+      "choice_logprobs": {
+        "new brush": -10.2984,
+        "piece of cake": -14.443,
+        "book": -4.8139,
+        "coin": -4.8139
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_01",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of cold is",
+      "answer": "hot",
+      "unknown_prompt_words": [
+        "cold",
+        "is",
+        "opposite"
+      ],
+      "unknown_choice_words": [
+        "dark",
+        "hot",
+        "small",
+        "young"
+      ],
+      "choice_logprobs": {
+        "hot": -7.8189,
+        "dark": -7.8189,
+        "small": -7.8189,
+        "young": -7.8189
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_02",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of empty is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "empty",
+        "is",
+        "opposite"
+      ],
+      "unknown_choice_words": [
+        "clean",
+        "fast",
+        "full",
+        "quiet"
+      ],
+      "choice_logprobs": {
+        "full": -7.8189,
+        "quiet": -7.8189,
+        "clean": -7.8189,
+        "fast": -7.8189
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_03",
+      "kind": "memory",
+      "skill": "context",
+      "prompt": "the customer paid the bill . the customer",
+      "answer": "paid",
+      "unknown_prompt_words": [
+        "bill",
+        "paid"
+      ],
+      "unknown_choice_words": [
+        "closed",
+        "opened",
+        "paid",
+        "walked"
+      ],
+      "choice_logprobs": {
+        "paid": -12.3681,
+        "opened": -12.3681,
+        "closed": -12.3681,
+        "walked": -12.3681
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_04",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the lamp is not dark . it is",
+      "answer": "bright",
+      "unknown_prompt_words": [
+        "dark",
+        "is",
+        "it",
+        "lamp",
+        "not"
+      ],
+      "unknown_choice_words": [
+        "bright",
+        "cold",
+        "empty",
+        "small"
+      ],
+      "choice_logprobs": {
+        "bright": -7.9039,
+        "cold": -7.9039,
+        "small": -7.9039,
+        "empty": -7.9039
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_05",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the room is not clean . it is",
+      "answer": "dirty",
+      "unknown_prompt_words": [
+        "clean",
+        "is",
+        "it",
+        "not",
+        "room"
+      ],
+      "unknown_choice_words": [
+        "dirty",
+        "fast",
+        "full",
+        "young"
+      ],
+      "choice_logprobs": {
+        "dirty": -7.9039,
+        "young": -7.9039,
+        "fast": -7.9039,
+        "full": -7.9039
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_06",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the bag is not empty . it is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "bag",
+        "empty",
+        "is",
+        "it",
+        "not"
+      ],
+      "unknown_choice_words": [
+        "dark",
+        "full",
+        "old",
+        "quiet"
+      ],
+      "choice_logprobs": {
+        "full": -7.9039,
+        "dark": -7.9039,
+        "old": -7.9039,
+        "quiet": -7.9039
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_07",
+      "kind": "new",
+      "skill": "context",
+      "prompt": "the student read the book . the student",
+      "answer": "read",
+      "unknown_prompt_words": [
+        "book",
+        "read"
+      ],
+      "unknown_choice_words": [
+        "closed",
+        "cooked",
+        "drove",
+        "read"
+      ],
+      "choice_logprobs": {
+        "read": -13.5456,
+        "closed": -13.5456,
+        "cooked": -13.5456,
+        "drove": -13.5456
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_08",
+      "kind": "transfer",
+      "skill": "opposite",
+      "prompt": "the opposite of bright is",
+      "answer": "dark",
+      "unknown_prompt_words": [
+        "bright",
+        "is",
+        "opposite"
+      ],
+      "unknown_choice_words": [
+        "clean",
+        "dark",
+        "full",
+        "young"
+      ],
+      "choice_logprobs": {
+        "dark": -7.8189,
+        "full": -7.8189,
+        "young": -7.8189,
+        "clean": -7.8189
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_09",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the report about the teacher explains the",
+      "answer": "lesson",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "food",
+        "hotel"
+      ],
+      "choice_logprobs": {
+        "lesson": -1.3937,
+        "customer": -11.7435,
+        "hotel": -14.4288,
+        "food": -14.4288
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "lesson",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_10",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the worker entered the building and went to the",
+      "answer": "office",
+      "unknown_prompt_words": [
+        "building",
+        "entered",
+        "to",
+        "went",
+        "worker"
+      ],
+      "unknown_choice_words": [
+        "food",
+        "river"
+      ],
+      "choice_logprobs": {
+        "office": -11.1953,
+        "river": -20.2395,
+        "food": -20.2395,
+        "student": -13.0364
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "office",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_11",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "aunt polly told tom to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "aunt",
+        "polly",
+        "to",
+        "told",
+        "tom",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "fence",
+        "garden",
+        "house",
+        "river"
+      ],
+      "choice_logprobs": {
+        "fence": -21.9757,
+        "river": -21.9757,
+        "garden": -21.9757,
+        "house": -21.9757
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_12",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom was hiding when aunt polly",
+      "answer": "found him",
+      "unknown_prompt_words": [
+        "aunt",
+        "hiding",
+        "polly",
+        "tom",
+        "when"
+      ],
+      "unknown_choice_words": [
+        "called",
+        "followed",
+        "found",
+        "him"
+      ],
+      "choice_logprobs": {
+        "found him": -20.6886,
+        "called him": -20.6886,
+        "helped him": -25.977,
+        "followed him": -20.6886
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_13",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom made the other boys want to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "boys",
+        "made",
+        "other",
+        "to",
+        "tom",
+        "want",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "fence",
+        "garden",
+        "house"
+      ],
+      "choice_logprobs": {
+        "fence": -20.5777,
+        "house": -20.5777,
+        "school": -12.3288,
+        "garden": -20.5777
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_14",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "ben rogers was pretending to be the",
+      "answer": "big mississippi steamboat",
+      "unknown_prompt_words": [
+        "be",
+        "ben",
+        "pretending",
+        "rogers",
+        "to"
+      ],
+      "unknown_choice_words": [
+        "big",
+        "farmer",
+        "mississippi",
+        "steamboat"
+      ],
+      "choice_logprobs": {
+        "big mississippi steamboat": -36.6053,
+        "school teacher": -21.0417,
+        "farmer": -21.0813,
+        "doctor": -12.6411
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_15",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom's aunt gave tom a",
+      "answer": "piece of cake",
+      "unknown_prompt_words": [
+        "aunt",
+        "gave",
+        "tom",
+        "tom's"
+      ],
+      "unknown_choice_words": [
+        "book",
+        "brush",
+        "cake",
+        "coin",
+        "piece"
+      ],
+      "choice_logprobs": {
+        "new brush": -25.3996,
+        "piece of cake": -36.8105,
+        "book": -10.8325,
+        "coin": -10.8325
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060103_576381Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_01",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of cold is",
+      "answer": "hot",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "hot": -5.761,
+        "dark": -5.4436,
+        "small": -5.6682,
+        "young": -5.6596
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dark",
+      "lenient_score": 0,
+      "lenient_choices_used": 3,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_02",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of empty is",
+      "answer": "full",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -5.7281,
+        "quiet": -5.5262,
+        "clean": -5.5947,
+        "fast": -5.8265
+      },
+      "strict_status": "scored",
+      "strict_pick": "quiet",
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "quiet",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_03",
+      "kind": "memory",
+      "skill": "context",
+      "prompt": "the customer paid the bill . the customer",
+      "answer": "paid",
+      "unknown_prompt_words": [
+        "bill",
+        "paid"
+      ],
+      "unknown_choice_words": [
+        "opened",
+        "paid",
+        "walked"
+      ],
+      "choice_logprobs": {
+        "paid": -5.7786,
+        "opened": -5.7786,
+        "closed": -5.4801,
+        "walked": -5.7786
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_04",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the lamp is not dark . it is",
+      "answer": "bright",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "bright": -5.6537,
+        "cold": -5.6519,
+        "small": -5.6874,
+        "empty": -5.4535
+      },
+      "strict_status": "scored",
+      "strict_pick": "empty",
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "empty",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_05",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the room is not clean . it is",
+      "answer": "dirty",
+      "unknown_prompt_words": [
+        "room"
+      ],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dirty": -5.8993,
+        "young": -5.6679,
+        "fast": -5.6982,
+        "full": -5.6509
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "full",
+      "lenient_score": 0,
+      "lenient_choices_used": 3,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_06",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the bag is not empty . it is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "bag"
+      ],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -5.6603,
+        "dark": -5.4227,
+        "old": -5.4961,
+        "quiet": -5.5882
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dark",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_07",
+      "kind": "new",
+      "skill": "context",
+      "prompt": "the student read the book . the student",
+      "answer": "read",
+      "unknown_prompt_words": [
+        "read"
+      ],
+      "unknown_choice_words": [
+        "cooked",
+        "drove",
+        "read"
+      ],
+      "choice_logprobs": {
+        "read": -5.4976,
+        "closed": -5.6897,
+        "cooked": -5.4976,
+        "drove": -5.4976
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_08",
+      "kind": "transfer",
+      "skill": "opposite",
+      "prompt": "the opposite of bright is",
+      "answer": "dark",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dark": -5.4474,
+        "full": -5.7094,
+        "young": -5.6841,
+        "clean": -5.6247
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dark",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_09",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the report about the teacher explains the",
+      "answer": "lesson",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "food",
+        "hotel"
+      ],
+      "choice_logprobs": {
+        "lesson": -5.7651,
+        "customer": -5.8555,
+        "hotel": -5.9262,
+        "food": -5.9262
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "lesson",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_10",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the worker entered the building and went to the",
+      "answer": "office",
+      "unknown_prompt_words": [
+        "building",
+        "entered",
+        "to",
+        "went",
+        "worker"
+      ],
+      "unknown_choice_words": [
+        "food",
+        "river"
+      ],
+      "choice_logprobs": {
+        "office": -5.4786,
+        "river": -5.8855,
+        "food": -5.8855,
+        "student": -5.7555
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "office",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_11",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "aunt polly told tom to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "aunt",
+        "polly",
+        "to",
+        "told",
+        "tom",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house",
+        "river"
+      ],
+      "choice_logprobs": {
+        "fence": -5.7419,
+        "river": -6.0452,
+        "garden": -6.0452,
+        "house": -6.0452
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "too_few_choices",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_12",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom was hiding when aunt polly",
+      "answer": "found him",
+      "unknown_prompt_words": [
+        "aunt",
+        "hiding",
+        "polly",
+        "tom"
+      ],
+      "unknown_choice_words": [
+        "called",
+        "followed",
+        "found",
+        "him"
+      ],
+      "choice_logprobs": {
+        "found him": -10.3126,
+        "called him": -10.3126,
+        "helped him": -11.5452,
+        "followed him": -10.3126
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_13",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom made the other boys want to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "boys",
+        "made",
+        "other",
+        "to",
+        "tom",
+        "want",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house"
+      ],
+      "choice_logprobs": {
+        "fence": -5.6644,
+        "house": -5.9138,
+        "school": -5.5512,
+        "garden": -5.9138
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "school",
+      "lenient_score": 0,
+      "lenient_choices_used": 2,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_14",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "ben rogers was pretending to be the",
+      "answer": "big mississippi steamboat",
+      "unknown_prompt_words": [
+        "be",
+        "ben",
+        "pretending",
+        "rogers",
+        "to"
+      ],
+      "unknown_choice_words": [
+        "farmer",
+        "mississippi",
+        "steamboat"
+      ],
+      "choice_logprobs": {
+        "big mississippi steamboat": -16.3621,
+        "school teacher": -11.4623,
+        "farmer": -6.0338,
+        "doctor": -5.7768
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_15",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom's aunt gave tom a",
+      "answer": "piece of cake",
+      "unknown_prompt_words": [
+        "aunt",
+        "gave",
+        "tom",
+        "tom's"
+      ],
+      "unknown_choice_words": [
+        "brush",
+        "coin",
+        "piece"
+      ],
+      "choice_logprobs": {
+        "new brush": -11.2471,
+        "piece of cake": -17.2637,
+        "book": -5.4714,
+        "coin": -5.6718
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_01",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of cold is",
+      "answer": "hot",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "hot": -1.0773,
+        "dark": -5.0755,
+        "small": -4.2172,
+        "young": -8.6546
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "hot",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_02",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of empty is",
+      "answer": "full",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -2.0572,
+        "quiet": -4.4079,
+        "clean": -2.1052,
+        "fast": -6.1952
+      },
+      "strict_status": "scored",
+      "strict_pick": "full",
+      "strict_score": 1,
+      "lenient_status": "scored",
+      "lenient_pick": "full",
+      "lenient_score": 1,
+      "lenient_choices_used": 4,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_03",
+      "kind": "memory",
+      "skill": "context",
+      "prompt": "the customer paid the bill . the customer",
+      "answer": "paid",
+      "unknown_prompt_words": [
+        "bill",
+        "paid"
+      ],
+      "unknown_choice_words": [
+        "opened",
+        "paid",
+        "walked"
+      ],
+      "choice_logprobs": {
+        "paid": -9.7869,
+        "opened": -9.7869,
+        "closed": -5.464,
+        "walked": -9.7869
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_04",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the lamp is not dark . it is",
+      "answer": "bright",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "bright": -5.0963,
+        "cold": -6.9628,
+        "small": -7.0506,
+        "empty": -6.6907
+      },
+      "strict_status": "scored",
+      "strict_pick": "bright",
+      "strict_score": 1,
+      "lenient_status": "scored",
+      "lenient_pick": "bright",
+      "lenient_score": 1,
+      "lenient_choices_used": 4,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_05",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the room is not clean . it is",
+      "answer": "dirty",
+      "unknown_prompt_words": [
+        "room"
+      ],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dirty": -2.0529,
+        "young": -10.2106,
+        "fast": -7.6384,
+        "full": -5.239
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dirty",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_06",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the bag is not empty . it is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "bag"
+      ],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -2.1001,
+        "dark": -6.858,
+        "old": -6.7989,
+        "quiet": -5.8116
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "full",
+      "lenient_score": 1,
+      "lenient_choices_used": 4,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_07",
+      "kind": "new",
+      "skill": "context",
+      "prompt": "the student read the book . the student",
+      "answer": "read",
+      "unknown_prompt_words": [
+        "read"
+      ],
+      "unknown_choice_words": [
+        "cooked",
+        "drove",
+        "read"
+      ],
+      "choice_logprobs": {
+        "read": -11.7492,
+        "closed": -11.2475,
+        "cooked": -11.7492,
+        "drove": -11.7492
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_08",
+      "kind": "transfer",
+      "skill": "opposite",
+      "prompt": "the opposite of bright is",
+      "answer": "dark",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dark": -1.4191,
+        "full": -7.0159,
+        "young": -7.7827,
+        "clean": -6.3942
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dark",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_09",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the report about the teacher explains the",
+      "answer": "lesson",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "food",
+        "hotel"
+      ],
+      "choice_logprobs": {
+        "lesson": -1.4859,
+        "customer": -10.5931,
+        "hotel": -13.2621,
+        "food": -13.2621
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "lesson",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_10",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the worker entered the building and went to the",
+      "answer": "office",
+      "unknown_prompt_words": [
+        "building",
+        "entered",
+        "to",
+        "went",
+        "worker"
+      ],
+      "unknown_choice_words": [
+        "food",
+        "river"
+      ],
+      "choice_logprobs": {
+        "office": -7.8702,
+        "river": -11.5244,
+        "food": -11.5244,
+        "student": -6.8302
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "student",
+      "lenient_score": 0,
+      "lenient_choices_used": 2,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_11",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "aunt polly told tom to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "aunt",
+        "polly",
+        "to",
+        "told",
+        "tom",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house",
+        "river"
+      ],
+      "choice_logprobs": {
+        "fence": -4.4061,
+        "river": -12.2564,
+        "garden": -12.2564,
+        "house": -12.2564
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "too_few_choices",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_12",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom was hiding when aunt polly",
+      "answer": "found him",
+      "unknown_prompt_words": [
+        "aunt",
+        "hiding",
+        "polly",
+        "tom"
+      ],
+      "unknown_choice_words": [
+        "called",
+        "followed",
+        "found",
+        "him"
+      ],
+      "choice_logprobs": {
+        "found him": -18.9777,
+        "called him": -18.9777,
+        "helped him": -19.6859,
+        "followed him": -18.9777
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_13",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom made the other boys want to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "boys",
+        "made",
+        "other",
+        "to",
+        "tom",
+        "want",
+        "whitewash"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house"
+      ],
+      "choice_logprobs": {
+        "fence": -4.7875,
+        "house": -11.677,
+        "school": -6.3595,
+        "garden": -11.677
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "fence",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_14",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "ben rogers was pretending to be the",
+      "answer": "big mississippi steamboat",
+      "unknown_prompt_words": [
+        "be",
+        "ben",
+        "pretending",
+        "rogers",
+        "to"
+      ],
+      "unknown_choice_words": [
+        "farmer",
+        "mississippi",
+        "steamboat"
+      ],
+      "choice_logprobs": {
+        "big mississippi steamboat": -24.7783,
+        "school teacher": -11.2398,
+        "farmer": -12.4789,
+        "doctor": -8.9349
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_15",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom's aunt gave tom a",
+      "answer": "piece of cake",
+      "unknown_prompt_words": [
+        "aunt",
+        "gave",
+        "tom",
+        "tom's"
+      ],
+      "unknown_choice_words": [
+        "brush",
+        "coin",
+        "piece"
+      ],
+      "choice_logprobs": {
+        "new brush": -20.9647,
+        "piece of cake": -23.511,
+        "book": -7.7394,
+        "coin": -8.9798
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260922T060146_232475Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_01",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of cold is",
+      "answer": "hot",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "hot": -6.1425,
+        "dark": -6.2016,
+        "small": -6.2725,
+        "young": -6.3278
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "hot",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_02",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of empty is",
+      "answer": "full",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -6.3944,
+        "quiet": -5.8677,
+        "clean": -6.3331,
+        "fast": -6.4215
+      },
+      "strict_status": "scored",
+      "strict_pick": "quiet",
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "quiet",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_03",
+      "kind": "memory",
+      "skill": "context",
+      "prompt": "the customer paid the bill . the customer",
+      "answer": "paid",
+      "unknown_prompt_words": [
+        "bill",
+        "paid"
+      ],
+      "unknown_choice_words": [
+        "opened",
+        "paid",
+        "walked"
+      ],
+      "choice_logprobs": {
+        "paid": -6.1315,
+        "opened": -6.1315,
+        "closed": -6.0378,
+        "walked": -6.1315
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_04",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the lamp is not dark . it is",
+      "answer": "bright",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "bright": -6.3387,
+        "cold": -6.4832,
+        "small": -6.5419,
+        "empty": -6.3369
+      },
+      "strict_status": "scored",
+      "strict_pick": "empty",
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "empty",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_05",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the room is not clean . it is",
+      "answer": "dirty",
+      "unknown_prompt_words": [
+        "room"
+      ],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dirty": -6.4327,
+        "young": -6.1853,
+        "fast": -6.4814,
+        "full": -6.3943
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "full",
+      "lenient_score": 0,
+      "lenient_choices_used": 3,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_06",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the bag is not empty . it is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "bag"
+      ],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -6.386,
+        "dark": -6.2874,
+        "old": -6.3139,
+        "quiet": -6.2461
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "quiet",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_07",
+      "kind": "new",
+      "skill": "context",
+      "prompt": "the student read the book . the student",
+      "answer": "read",
+      "unknown_prompt_words": [
+        "read"
+      ],
+      "unknown_choice_words": [
+        "cooked",
+        "drove",
+        "read"
+      ],
+      "choice_logprobs": {
+        "read": -6.2003,
+        "closed": -5.9281,
+        "cooked": -6.2003,
+        "drove": -6.2003
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_08",
+      "kind": "transfer",
+      "skill": "opposite",
+      "prompt": "the opposite of bright is",
+      "answer": "dark",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dark": -6.2024,
+        "full": -6.4012,
+        "young": -6.3184,
+        "clean": -6.3329
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dark",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_09",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the report about the teacher explains the",
+      "answer": "lesson",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "food",
+        "hotel"
+      ],
+      "choice_logprobs": {
+        "lesson": -6.5918,
+        "customer": -6.2421,
+        "hotel": -6.18,
+        "food": -6.18
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "customer",
+      "lenient_score": 0,
+      "lenient_choices_used": 2,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_10",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the worker entered the building and went to the",
+      "answer": "office",
+      "unknown_prompt_words": [
+        "building",
+        "entered",
+        "worker"
+      ],
+      "unknown_choice_words": [
+        "food",
+        "river"
+      ],
+      "choice_logprobs": {
+        "office": -5.9274,
+        "river": -6.4231,
+        "food": -6.4231,
+        "student": -6.1042
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "office",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_11",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "aunt polly told tom to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "told"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house",
+        "river"
+      ],
+      "choice_logprobs": {
+        "fence": -6.4015,
+        "river": -6.1777,
+        "garden": -6.1777,
+        "house": -6.1777
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "too_few_choices",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_12",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom was hiding when aunt polly",
+      "answer": "found him",
+      "unknown_prompt_words": [
+        "hiding"
+      ],
+      "unknown_choice_words": [
+        "called",
+        "followed",
+        "found"
+      ],
+      "choice_logprobs": {
+        "found him": -12.5542,
+        "called him": -12.5542,
+        "helped him": -12.3663,
+        "followed him": -12.5542
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_13",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom made the other boys want to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "made",
+        "want"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house"
+      ],
+      "choice_logprobs": {
+        "fence": -6.3698,
+        "house": -6.4107,
+        "school": -6.5113,
+        "garden": -6.4107
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "fence",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_14",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "ben rogers was pretending to be the",
+      "answer": "big mississippi steamboat",
+      "unknown_prompt_words": [
+        "pretending",
+        "rogers"
+      ],
+      "unknown_choice_words": [
+        "farmer",
+        "mississippi",
+        "steamboat"
+      ],
+      "choice_logprobs": {
+        "big mississippi steamboat": -17.9994,
+        "school teacher": -12.4662,
+        "farmer": -6.1936,
+        "doctor": -6.3709
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_15",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom's aunt gave tom a",
+      "answer": "piece of cake",
+      "unknown_prompt_words": [
+        "gave",
+        "tom's"
+      ],
+      "unknown_choice_words": [
+        "coin",
+        "piece"
+      ],
+      "choice_logprobs": {
+        "new brush": -12.7026,
+        "piece of cake": -18.6661,
+        "book": -6.507,
+        "coin": -6.423
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained"
+    },
+    {
+      "id": "my_01",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of cold is",
+      "answer": "hot",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "hot": -3.1404,
+        "dark": -4.1476,
+        "small": -4.5387,
+        "young": -8.3115
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "hot",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_02",
+      "kind": "memory",
+      "skill": "opposite",
+      "prompt": "the opposite of empty is",
+      "answer": "full",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -4.3814,
+        "quiet": -3.9342,
+        "clean": -3.3369,
+        "fast": -3.8931
+      },
+      "strict_status": "scored",
+      "strict_pick": "clean",
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "clean",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_03",
+      "kind": "memory",
+      "skill": "context",
+      "prompt": "the customer paid the bill . the customer",
+      "answer": "paid",
+      "unknown_prompt_words": [
+        "bill",
+        "paid"
+      ],
+      "unknown_choice_words": [
+        "opened",
+        "paid",
+        "walked"
+      ],
+      "choice_logprobs": {
+        "paid": -10.2779,
+        "opened": -10.2779,
+        "closed": -10.3228,
+        "walked": -10.2779
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_04",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the lamp is not dark . it is",
+      "answer": "bright",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "bright": -4.3951,
+        "cold": -4.2042,
+        "small": -4.7389,
+        "empty": -3.5147
+      },
+      "strict_status": "scored",
+      "strict_pick": "empty",
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "empty",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_05",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the room is not clean . it is",
+      "answer": "dirty",
+      "unknown_prompt_words": [
+        "room"
+      ],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dirty": -3.6636,
+        "young": -5.1434,
+        "fast": -4.3153,
+        "full": -4.1772
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dirty",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_06",
+      "kind": "new",
+      "skill": "negation",
+      "prompt": "the bag is not empty . it is",
+      "answer": "full",
+      "unknown_prompt_words": [
+        "bag"
+      ],
+      "unknown_choice_words": [],
+      "choice_logprobs": {
+        "full": -4.5561,
+        "dark": -5.0548,
+        "old": -3.863,
+        "quiet": -4.0912
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "old",
+      "lenient_score": 0,
+      "lenient_choices_used": 4,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_07",
+      "kind": "new",
+      "skill": "context",
+      "prompt": "the student read the book . the student",
+      "answer": "read",
+      "unknown_prompt_words": [
+        "read"
+      ],
+      "unknown_choice_words": [
+        "cooked",
+        "drove",
+        "read"
+      ],
+      "choice_logprobs": {
+        "read": -6.413,
+        "closed": -7.1361,
+        "cooked": -6.413,
+        "drove": -6.413
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_08",
+      "kind": "transfer",
+      "skill": "opposite",
+      "prompt": "the opposite of bright is",
+      "answer": "dark",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "young"
+      ],
+      "choice_logprobs": {
+        "dark": -3.9952,
+        "full": -4.7129,
+        "young": -8.2636,
+        "clean": -4.0523
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "dark",
+      "lenient_score": 1,
+      "lenient_choices_used": 3,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_09",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the report about the teacher explains the",
+      "answer": "lesson",
+      "unknown_prompt_words": [],
+      "unknown_choice_words": [
+        "food",
+        "hotel"
+      ],
+      "choice_logprobs": {
+        "lesson": -1.4731,
+        "customer": -11.0543,
+        "hotel": -13.316,
+        "food": -13.316
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "lesson",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_10",
+      "kind": "transfer",
+      "skill": "frame",
+      "prompt": "the worker entered the building and went to the",
+      "answer": "office",
+      "unknown_prompt_words": [
+        "building",
+        "entered",
+        "worker"
+      ],
+      "unknown_choice_words": [
+        "food",
+        "river"
+      ],
+      "choice_logprobs": {
+        "office": -6.3469,
+        "river": -1.5487,
+        "food": -1.5487,
+        "student": -9.1092
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "office",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_11",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "aunt polly told tom to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "told"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house",
+        "river"
+      ],
+      "choice_logprobs": {
+        "fence": -3.1132,
+        "river": -1.0792,
+        "garden": -1.0792,
+        "house": -1.0792
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "too_few_choices",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_12",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom was hiding when aunt polly",
+      "answer": "found him",
+      "unknown_prompt_words": [
+        "hiding"
+      ],
+      "unknown_choice_words": [
+        "called",
+        "followed",
+        "found"
+      ],
+      "choice_logprobs": {
+        "found him": -8.0051,
+        "called him": -8.0051,
+        "helped him": -21.1114,
+        "followed him": -8.0051
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_13",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom made the other boys want to whitewash the",
+      "answer": "fence",
+      "unknown_prompt_words": [
+        "made",
+        "want"
+      ],
+      "unknown_choice_words": [
+        "garden",
+        "house"
+      ],
+      "choice_logprobs": {
+        "fence": -3.5343,
+        "house": -0.7295,
+        "school": -6.9982,
+        "garden": -0.7295
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "scored",
+      "lenient_pick": "fence",
+      "lenient_score": 1,
+      "lenient_choices_used": 2,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_14",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "ben rogers was pretending to be the",
+      "answer": "big mississippi steamboat",
+      "unknown_prompt_words": [
+        "pretending",
+        "rogers"
+      ],
+      "unknown_choice_words": [
+        "farmer",
+        "mississippi",
+        "steamboat"
+      ],
+      "choice_logprobs": {
+        "big mississippi steamboat": -7.7597,
+        "school teacher": -16.2628,
+        "farmer": -0.5542,
+        "doctor": -8.3158
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    },
+    {
+      "id": "my_15",
+      "kind": "book",
+      "skill": "tom sawyer ch. I-III",
+      "prompt": "tom's aunt gave tom a",
+      "answer": "piece of cake",
+      "unknown_prompt_words": [
+        "gave",
+        "tom's"
+      ],
+      "unknown_choice_words": [
+        "coin",
+        "piece"
+      ],
+      "choice_logprobs": {
+        "new brush": -17.1745,
+        "piece of cake": -14.7404,
+        "book": -7.0284,
+        "coin": -1.9238
+      },
+      "strict_status": "unscorable",
+      "strict_pick": null,
+      "strict_score": 0,
+      "lenient_status": "answer_unknown",
+      "lenient_pick": null,
+      "lenient_score": 0,
+      "run": "20260923T033633_820623Z",
+      "stage": "trained"
+    }
+  ]
+}

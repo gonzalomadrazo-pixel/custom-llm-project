@@ -1,0 +1,199 @@
+{
+  "suite": "evals/my_holdout.json",
+  "suite_sha256": "a17c19c3224ff603a6f138c8cc61352981f04b91c9f5d66b9e3da8377962e666",
+  "scoring": "Inference only: no weights change, and the tests never enter any corpus.",
+  "summaries": [
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "untrained",
+      "total": 15,
+      "strict_correct": 0,
+      "strict_scorable": 0,
+      "lenient_correct": 1,
+      "lenient_scorable": 2,
+      "lenient_chance_expected": 1.0,
+      "by_kind": {
+        "book": {
+          "total": 5,
+          "strict": 0,
+          "lenient": 0
+        },
+        "memory": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 0
+        },
+        "new": {
+          "total": 4,
+          "strict": 0,
+          "lenient": 0
+        },
+        "transfer": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 1
+        }
+      }
+    },
+    {
+      "run": "20260922T060103_576381Z",
+      "stage": "trained",
+      "total": 15,
+      "strict_correct": 0,
+      "strict_scorable": 0,
+      "lenient_correct": 2,
+      "lenient_scorable": 2,
+      "lenient_chance_expected": 1.0,
+      "by_kind": {
+        "book": {
+          "total": 5,
+          "strict": 0,
+          "lenient": 0
+        },
+        "memory": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 0
+        },
+        "new": {
+          "total": 4,
+          "strict": 0,
+          "lenient": 0
+        },
+        "transfer": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 2
+        }
+      }
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "untrained",
+      "total": 15,
+      "strict_correct": 0,
+      "strict_scorable": 2,
+      "lenient_correct": 3,
+      "lenient_scorable": 9,
+      "lenient_chance_expected": 3.25,
+      "by_kind": {
+        "book": {
+          "total": 5,
+          "strict": 0,
+          "lenient": 0
+        },
+        "memory": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 0
+        },
+        "new": {
+          "total": 4,
+          "strict": 0,
+          "lenient": 0
+        },
+        "transfer": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 3
+        }
+      }
+    },
+    {
+      "run": "20260922T060146_232475Z",
+      "stage": "trained",
+      "total": 15,
+      "strict_correct": 2,
+      "strict_scorable": 2,
+      "lenient_correct": 8,
+      "lenient_scorable": 9,
+      "lenient_chance_expected": 3.25,
+      "by_kind": {
+        "book": {
+          "total": 5,
+          "strict": 0,
+          "lenient": 1
+        },
+        "memory": {
+          "total": 3,
+          "strict": 1,
+          "lenient": 2
+        },
+        "new": {
+          "total": 4,
+          "strict": 1,
+          "lenient": 3
+        },
+        "transfer": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 2
+        }
+      }
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "untrained",
+      "total": 15,
+      "strict_correct": 0,
+      "strict_scorable": 2,
+      "lenient_correct": 4,
+      "lenient_scorable": 9,
+      "lenient_chance_expected": 3.25,
+      "by_kind": {
+        "book": {
+          "total": 5,
+          "strict": 0,
+          "lenient": 1
+        },
+        "memory": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 1
+        },
+        "new": {
+          "total": 4,
+          "strict": 0,
+          "lenient": 0
+        },
+        "transfer": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 2
+        }
+      }
+    },
+    {
+      "run": "20260923T033633_820623Z",
+      "stage": "trained",
+      "total": 15,
+      "strict_correct": 0,
+      "strict_scorable": 2,
+      "lenient_correct": 6,
+      "lenient_scorable": 9,
+      "lenient_chance_expected": 3.25,
+      "by_kind": {
+        "book": {
+          "total": 5,
+          "strict": 0,
+          "lenient": 1
+        },
+        "memory": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 1
+        },
+        "new": {
+          "total": 4,
+          "strict": 0,
+          "lenient": 1
+        },
+        "transfer": {
+          "total": 3,
+          "strict": 0,
+          "lenient": 3
+        }
+      }
+    }
+  ]
+}

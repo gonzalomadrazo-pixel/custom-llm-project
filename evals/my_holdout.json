@@ -1,0 +1,31 @@
+{
+  "suite_id": "gonzalo-holdout-v1",
+  "authorship": "Prompts, choices, answers and kind labels written by Gonzalo on 2026-09-22 after runs 1-3 were trained. Not used to build any corpus. The 'audit' notes were added by Claude from automatic checks; they do not change any prompt or answer.",
+  "purpose": "Personal test set for checking whether a model is doing better than before. Kept in evals/, outside corpus/; never a training input.",
+  "cases": [
+    {"id": "my_01", "kind": "memory", "skill": "opposite", "prompt": "the opposite of cold is", "choices": ["hot", "dark", "small", "young"], "answer": "hot"},
+    {"id": "my_02", "kind": "memory", "skill": "opposite", "prompt": "the opposite of empty is", "choices": ["full", "quiet", "clean", "fast"], "answer": "full",
+     "audit": "Not in any training text. The prompt is identical to course eval lang_29, and the corpus teaches empty/full only in the reverse direction, so this behaves as a transfer test."},
+    {"id": "my_03", "kind": "memory", "skill": "context", "prompt": "the customer paid the bill . the customer", "choices": ["paid", "opened", "closed", "walked"], "answer": "paid",
+     "audit": "Not in any training text; 'paid', 'bill', 'opened' and 'walked' are not in any model's vocabulary."},
+    {"id": "my_04", "kind": "new", "skill": "negation", "prompt": "the lamp is not dark . it is", "choices": ["bright", "cold", "small", "empty"], "answer": "bright",
+     "controls": {"flip": {"prompt": "the lamp is not bright . it is", "expect": "dark"}, "no_not": {"prompt": "the lamp is dark . it is", "expect": "dark"}}},
+    {"id": "my_05", "kind": "new", "skill": "negation", "prompt": "the room is not clean . it is", "choices": ["dirty", "young", "fast", "full"], "answer": "dirty",
+     "controls": {"flip": {"prompt": "the room is not dirty . it is", "expect": "clean"}, "no_not": {"prompt": "the room is clean . it is", "expect": "clean"}}},
+    {"id": "my_06", "kind": "new", "skill": "negation", "prompt": "the bag is not empty . it is", "choices": ["full", "dark", "old", "quiet"], "answer": "full",
+     "controls": {"flip": {"prompt": "the bag is not full . it is", "expect": "empty"}, "no_not": {"prompt": "the bag is empty . it is", "expect": "empty"}}},
+    {"id": "my_07", "kind": "new", "skill": "context", "prompt": "the student read the book . the student", "choices": ["read", "closed", "cooked", "drove"], "answer": "read"},
+    {"id": "my_08", "kind": "transfer", "skill": "opposite", "prompt": "the opposite of bright is", "choices": ["dark", "full", "young", "clean"], "answer": "dark",
+     "audit": "This exact sentence, with the answer 'dark', is in the expanded and run-3 training text (corpus/opposites.txt), so it behaves as a memory test."},
+    {"id": "my_09", "kind": "transfer", "skill": "frame", "prompt": "the report about the teacher explains the", "choices": ["lesson", "customer", "hotel", "food"], "answer": "lesson",
+     "audit": "This prompt is a classroom template that appears in every run's training text (with 'lesson' in the expanded run), so it is closer to memory than transfer."},
+    {"id": "my_10", "kind": "transfer", "skill": "frame", "prompt": "the worker entered the building and went to the", "choices": ["office", "river", "food", "student"], "answer": "office"},
+    {"id": "my_11", "kind": "book", "skill": "tom sawyer ch. I-III", "prompt": "aunt polly told tom to whitewash the", "choices": ["fence", "river", "garden", "house"], "answer": "fence"},
+    {"id": "my_12", "kind": "book", "skill": "tom sawyer ch. I-III", "prompt": "tom was hiding when aunt polly", "choices": ["found him", "called him", "helped him", "followed him"], "answer": "found him"},
+    {"id": "my_13", "kind": "book", "skill": "tom sawyer ch. I-III", "prompt": "tom made the other boys want to whitewash the", "choices": ["fence", "house", "school", "garden"], "answer": "fence"},
+    {"id": "my_14", "kind": "book", "skill": "tom sawyer ch. I-III", "prompt": "ben rogers was pretending to be the", "choices": ["big mississippi steamboat", "school teacher", "farmer", "doctor"], "answer": "big mississippi steamboat",
+     "audit": "Factual mismatch: the book says Ben was 'personating the Big Missouri' steamboat; 'Mississippi' never appears in chapters I-III."},
+    {"id": "my_15", "kind": "book", "skill": "tom sawyer ch. I-III", "prompt": "tom's aunt gave tom a", "choices": ["new brush", "piece of cake", "book", "coin"], "answer": "piece of cake",
+     "audit": "Factual mismatch: in chapter III Aunt Polly gives Tom 'a choice apple'; 'cake' never appears in chapters I-III."}
+  ]
+}

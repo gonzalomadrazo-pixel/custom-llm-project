@@ -14,6 +14,7 @@
 | Extension categories and the data I added | [§3](#3-corpus) |
 | Coverage vs. learned pattern, with control tests | [§6.4](#64-coverage-or-learned-pattern-control-probes) |
 | Chat interface, launch instructions, transcript | [§7](#7-chat-interface) |
+| My own hold-out tests (15 cases I wrote, all models) | [§6.8](#68-my-own-hold-out-tests) |
 | Optional third experiment: adding a novel excerpt with no teaching | [§6.7](#67-optional-run-3-a-novel-excerpt-with-no-teaching) |
 | Interactive dashboard (runs the trained models in your browser) | [live page](https://gonzalomadrazo-pixel.github.io/custom-llm-project/dashboard.html) · [`dashboard.html`](dashboard.html) |
 | Learning explanation | [§8](#8-what-i-learned) |
@@ -425,6 +426,29 @@ Five cases changed between Run 2 and Run 3 (trained):
 
 **Limitations.** One seed per corpus, and changing the vocabulary also changes the initialization, so small differences (one or two cases) are not reliable. Repeating runs 2 and 3 with a few more seeds would show which differences hold. None of the book's words appear in eval answers, so this experiment cannot show gains from the book's own content.
 
+### 6.8 My own hold-out tests
+
+To check whether a model is doing better than before on material that did not guide my corpus choices, I wrote 15 tests after runs 1–3 were trained: [`evals/my_holdout.json`](evals/my_holdout.json). There are 10 general-language cases, labelled memory, new sentence or transfer, and 5 cases about *Tom Sawyer* chapters I–III. They are stored in `evals/`, outside `corpus/`, and never entered any training input. [`run_my_tests.py`](run_my_tests.py) scores every saved model (inference only), and the results are in [`results/my_holdout/`](results/my_holdout).
+
+**Scoring.** Each choice is scored by the probability of its whole word sequence after the prompt, so multi-word answers work. *Strict* is the course rule: any unknown word makes the case 0. *Lenient* feeds unknown prompt words in as `<UNK>` and drops choices the model cannot spell; the case is 0 if the answer itself is unknown. *Chance* is the lenient score expected from guessing among the choices left.
+
+| Model | Stage | Strict | Lenient | Chance |
+|---|---|---|---|---|
+| Starter | untrained | 0/15 (0 scorable) | **1**/15 (2 scorable) | 1.0 |
+| Starter | trained | 0/15 (0 scorable) | **2**/15 (2 scorable) | 1.0 |
+| Expanded | untrained | 0/15 (2 scorable) | **3**/15 (9 scorable) | 3.25 |
+| Expanded | trained | 2/15 (2 scorable) | **8**/15 (9 scorable) | 3.25 |
+| Run 3 (+ Tom Sawyer) | untrained | 0/15 (2 scorable) | **4**/15 (9 scorable) | 3.25 |
+| Run 3 (+ Tom Sawyer) | trained | 0/15 (2 scorable) | **6**/15 (9 scorable) | 3.25 |
+
+**Audit before running.** Automatic checks flagged four problems in my tests. I left the tests unchanged and recorded the flags in the file:
+- **Labels:** #2 is identical to course eval lang_29 and is not in training, so it behaves as a transfer test. #8 and #9 appear word for word in the training text, so they behave as memory tests.
+- **Book facts:** in #14 the book's steamboat is the *Big Missouri*, not *Mississippi*. In #15 Aunt Polly gives Tom an apple, not cake.
+
+**Negation controls** ([`negation_controls.json`](results/my_holdout/negation_controls.json)). For #4–6 the runner also scores the flipped story and the same sentence without "not". The expanded model prefers the opposite of the earlier adjective in every version, including "the lamp is dark . it is", where the story calls for *dark*. It uses the earlier word but ignores "not". Run 3 prefers the same word whichever way the story goes.
+
+**Limits.** Only 2 of 15 cases are fully scorable under the strict rule for any model. The Tom Sawyer questions use words that even run 3 does not have (*garden, house, told, found, piece, coin*), so they cannot measure what it took from the book. Several lenient cases have only two usable choices, so a single ✓ can be a coin flip: #13 is ✓ for the expanded model, which never saw the book.
+
 ## 7. Chat interface
 
 **Launch (terminal):**
@@ -501,6 +525,7 @@ Part one addresses the cause identified in §6.4: the model never saw a negation
 | `custom_llm_*.executed.ipynb` | Executed notebooks for both experiments and the optional run 3, outputs intact |
 | `make_extension_corpus.py`, `corpus/` | Extension-corpus generator (with leakage pre-check) and its two output files |
 | `evals/`, `run_evals.py` | Fixed 48-case suite (unchanged) and the scoring runner |
+| `evals/my_holdout.json`, `run_my_tests.py`, `results/my_holdout/` | My 15 hold-out tests, their runner and results |
 | `chat.py` | Terminal chat interface |
 | `llm_runs/` | All three complete run folders and their results ZIPs |
 | `corpus/literature/` | *Tom Sawyer* chapters I–III, used only in run 3 |
@@ -513,4 +538,4 @@ Part one addresses the cause identified in §6.4: the model never saw a negation
 
 ## 12. Attribution and AI assistance
 
-The starter notebook, eval suite, runner and chat script come from the course repository [pepealonso95/custom-llm](https://github.com/pepealonso95/custom-llm). The model is Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) under the MIT license. I used Claude (Anthropic) as an AI assistant, following the course's starter-prompt workflow: it set up the environment, ran both experiments and the evals, wrote the corpus generator, extracted the evidence and drafted the evidence sections of this README. For the optional run 3 it prepared the book excerpt, ran the notebook, evals and probes, and drafted §6.7. The run-3 question is mine, recorded before training. It also drafted the limitation and next experiment in §9. My prediction (§2) and my explanations (§8) are my own.
+The starter notebook, eval suite, runner and chat script come from the course repository [pepealonso95/custom-llm](https://github.com/pepealonso95/custom-llm). The model is Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) under the MIT license. I used Claude (Anthropic) as an AI assistant, following the course's starter-prompt workflow: it set up the environment, ran both experiments and the evals, wrote the corpus generator, extracted the evidence and drafted the evidence sections of this README. For the optional run 3 it prepared the book excerpt, ran the notebook, evals and probes, and drafted §6.7. The run-3 question is mine, recorded before training. The hold-out tests in §6.8 are mine; it wrote the runner, the audit notes and the §6.8 text. It also drafted the limitation and next experiment in §9. My prediction (§2) and my explanations (§8) are my own.
