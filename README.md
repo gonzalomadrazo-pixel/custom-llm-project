@@ -13,7 +13,7 @@
 | Four-row eval comparison and all four result sets | [§6.1](#61-four-row-comparison) |
 | Extension categories and the data I added | [§3](#3-corpus) |
 | Coverage vs. learned pattern, with control tests | [§6.4](#64-coverage-or-learned-pattern-control-probes) |
-| Chat interface, launch instructions, transcript | [§7](#7-chat-interface) |
+| Chat interface, launch instructions, live screenshot, transcripts | [§7](#7-chat-interface) |
 | My own hold-out tests (15 cases I wrote, all models) | [§6.8](#68-my-own-hold-out-tests) |
 | Optional third experiment: adding a novel excerpt with no teaching | [§6.7](#67-optional-run-3-a-novel-excerpt-with-no-teaching) |
 | Interactive dashboard (runs the trained models in your browser) | [live page](https://gonzalomadrazo-pixel.github.io/custom-llm-project/dashboard.html) · [`dashboard.html`](dashboard.html) |
@@ -464,9 +464,43 @@ A second, optional interface is included: [`chat-with-your-llm.html`](chat-with-
 
 **Model used:** expanded-corpus run `20260922T060146_232475Z`, 3,000 steps, model SHA-256 `c698130e231f3d66…`. The interface loads `model.pt` and its saved vocabulary. It never retrains, and chat text never enters the corpus.
 
+### Live session (screenshot)
+
+I ran `chat.py` myself on my Mac (Apple M1) against the expanded model:
+
+```bash
+.venv/bin/python chat.py --model llm_runs/20260922T060146_232475Z/model.pt --transcript results/chat_live.json
+```
+
+![Live chat session in my terminal](results/chat_live_screenshot.png)
+
+Transcript: [`results/chat_live.json`](results/chat_live.json). It records model SHA-256 `c698130e231f3d66…`, 3,000 steps, temperature 0.8 and a fresh context for every prompt.
+
+| # | Prompt | Model reply | Unknown words |
+|---|---|---|---|
+| 1 | `the customer` | `returned the offering after checking the price .` | — |
+| 2 | `the lamp is not dark, it is` | `water .` | `,` |
+| 3 | `the lamp is not dark it is` | `grey .` | — |
+| 4 | `what is the weather like today` | `the kitchen the important mango .` | `like`, `weather`, `what` |
+
+**What this session shows**
+- **Punctuation matters, and the comma is unknown.** No comma appears anywhere in the training text, so `,` becomes `<UNK>`. The period is known.
+- **The free reply does not follow the negation.** Across the whole vocabulary, *bright* never comes near the top. The punctuation only decides which memorized pattern the model falls into:
+
+| Prompt | Top 5 next words | *bright* |
+|---|---|---|
+| `the lamp is not dark . it is` | bus, train, taxi, truck, bicycle | 0.6%, rank 28 of 283 |
+| `the lamp is not dark it is` | yellow, brown, green, blue, white | 0.2%, rank 48 |
+| `the lamp is not dark, it is` | bus, train, taxi, truck, bicycle | 0.6%, rank 23 |
+
+  In the four-choice test (§6.8), *bright* beats *dark*, *cold*, *small* and *empty*, so the case scores. In free generation it is one word among 283, and other patterns win. This is the same gap between the four-choice pick and the free continuation described in §6.3.
+- **Questions fail.** The weather question uses three unknown words and gets a classroom-style fragment back.
+
+### Earlier session (rendered image)
+
 ![Chat session](results/chat_expanded.png)
 
-*Image rendered from the captured output of this session. Transcript: [`results/chat_expanded.json`](results/chat_expanded.json).*
+*Image rendered from the captured output of an earlier session. Transcript: [`results/chat_expanded.json`](results/chat_expanded.json).*
 
 | # | Prompt | Model reply | Unknown words |
 |---|---|---|---|

@@ -36,7 +36,7 @@ Both at 3,000 steps, learning rate 0.001, seed 42. Executed notebooks are `custo
 
 1. ~~Gonzalo writes the three ✍️ sections~~ Done 2026-09-22: his §2, §8 (Q1–Q6) and §9 text is in README verbatim; evidence tables under each §8 answer and the §9 implementation note are Claude's and labelled as such. Do not reword his text; typo fixes only, with his approval.
 2. ~~Paste his prediction into the notebooks~~ Done: markdown cell 2 only, outputs untouched (run 3 notebook holds his pre-training run-3 question).
-3. **Optional:** he runs `chat.py` locally and takes a live screenshot to accompany `results/chat_expanded.png` (currently a faithful render of a real captured session, labelled as such).
+3. ~~Live chat screenshot~~ Done: `results/chat_live_screenshot.png` + `results/chat_live.json` (4 turns, his Mac), in README §7.
 4. **Review the AI-assistance paragraph** in README §12 against course policy.
 5. **Submit the URL on bCourses.** Pushed to https://github.com/gonzalomadrazo-pixel/custom-llm-project (public; `main` and `fundamentals_ai` identical; checked signed out 2026-09-22). Dashboard is live on GitHub Pages at https://gonzalomadrazo-pixel.github.io/custom-llm-project/dashboard.html (served from `main`, so push to `main` to update it).
 
