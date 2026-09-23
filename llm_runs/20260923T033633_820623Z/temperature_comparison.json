@@ -1,0 +1,20 @@
+{
+  "0.3": [
+    "the different banana was mentioned in the taste report yesterday .",
+    "the team discussed the mango and the juice at the kitchen .",
+    "the team discussed the tutor and the course at the school .",
+    "today the kitchen focused on taste and the new mango ."
+  ],
+  "0.8": [
+    "we learned about the important car during a discussion of traffic .",
+    "“ well , you ain’t , too ’ <UNK> , <UNK> <UNK> too ! ”",
+    "“ well , she you know . ”",
+    "today the kitchen focused on taste and the new mango ."
+  ],
+  "1.2": [
+    "we learned about the important banana during a discussion of harvest .",
+    "small and thick are opposites .",
+    "the team discussed the platform and the data at the office .",
+    "today the kitchen focused on taste and the different then <UNK> , and the different therapist had <UNK> had :"
+  ]
+}

@@ -24,10 +24,13 @@ Both required experiments are complete, deterministic and reproducible.
 |---|---|---|---|
 | Starter | `llm_runs/20260922T060103_576381Z` | classroom only | 9/48 → 20/48 |
 | Expanded | `llm_runs/20260922T060146_232475Z` | classroom + `corpus/negation.txt` + `corpus/opposites.txt` | 5/48 → 27/48 |
+| Optional run 3 | `llm_runs/20260923T033633_820623Z` | run 2 corpus + `corpus/literature/tom_sawyer_ch01-03.txt` (Gutenberg #74, public domain) | 8/48 → 26/48 |
 
 Both at 3,000 steps, learning rate 0.001, seed 42. Executed notebooks are `custom_llm_starter.executed.ipynb` and `custom_llm_expanded.executed.ipynb` (outputs intact, zero errors; do not clear outputs).
 
 **Key finding.** Opposites improved for real (control probes: the true antonym ranks first for 21 of 23 stems, including stems never trained in that sentence frame). Negation did **not**: the model answers *blue* or *closed* regardless of the story, because the notebook split each three-sentence teaching example into separate passages, and because answer words were over-represented. See README §6.4 and `results/negation_control_probes.json`.
+
+**Run 3 finding (README §6.7).** Adding 8k tokens of real prose filled the 509-type vocabulary (1,292 types cut to UNK), dropped the opposites control probe from 21/23 to 6/23, and made lang_33 unscorable (*missing* was evicted). new_wording rose 6/8 → 8/8, which one seed cannot separate from initialization. Negation still doesn't flip. Gonzalo's pre-training question is in `results/run3_tom_sawyer/hypothesis_before_training.md`.
 
 ## Outstanding tasks
 
@@ -62,7 +65,7 @@ python -m unittest test_language_evals test_corpus
 sha256sum evals/language_evals.json
 ```
 
-To reproduce a full experiment, open `custom_llm.ipynb` and Run All. For the starter run, `corpus/` must contain only `README.md`. For the expanded run, both TXT files must be present. Each Run All writes a new timestamped folder to `llm_runs/`.
+To reproduce a full experiment, open `custom_llm.ipynb` and Run All. For the starter run, `corpus/` must contain only `README.md`. For the expanded run, both TXT files must be present and `corpus/literature/` must be moved out. Run 3 needs all three files. Run 3 was executed on an Apple M1 (the first two in a Linux container). Each Run All writes a new timestamped folder to `llm_runs/`.
 
 ## Environment gotchas
 

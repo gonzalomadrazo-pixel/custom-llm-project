@@ -34,7 +34,10 @@ SUITE_FILE_SHA256 = "e8affcd72841e3ed7da5c0b6b116327fe9f69c9abd66a1180d1d88ceaa3
 RUN_LABELS = {
     "20260922T060103_576381Z": "Starter corpus",
     "20260922T060146_232475Z": "Expanded: opposites + negation",
+    "20260923T033633_820623Z": "Run 3: expanded + Tom Sawyer ch. I-III",
 }
+# Run the dashboard opens on (the graded expanded-corpus experiment).
+DEFAULT_RUN = "20260922T060146_232475Z"
 
 REQUIRED_RUN_FILES = ["config.json", "history.json", "model.pt", "model_untrained.pt",
                       "inspection.json", "split.json", "corpus_manifest.json"]
@@ -234,6 +237,7 @@ def main():
     data = {
         "generated": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
         "repo_url": args.repo_url,
+        "default_run": DEFAULT_RUN,
         "runs": runs,
         "suite": {"id": suite.get("suite_id"), "groups": suite.get("groups"),
                   "scoring": suite.get("scoring"), "cases": suite["cases"]},

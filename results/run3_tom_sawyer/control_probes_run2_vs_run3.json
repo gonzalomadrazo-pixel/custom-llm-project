@@ -1,0 +1,449 @@
+{
+  "note": "Inference-only probes. Same prompts and candidate lists as results/negation_control_probes.json and results/opposites_control_probes.json, rerun on Run 2 and Run 3 models. No weights changed; none of these prompts entered training.",
+  "run2_model": "llm_runs/20260922T060146_232475Z/model.pt",
+  "run3_model": "llm_runs/20260923T033633_820623Z/model.pt",
+  "run2": {
+    "negation": [
+      {
+        "label": "original eval story",
+        "prompt": "the box is not red . it is blue . the box is",
+        "choice_probabilities": {
+          "green": 0.0566,
+          "yellow": 0.0934,
+          "blue": 0.1472,
+          "red": 0.0526
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "FLIPPED: not blue, it is red",
+        "prompt": "the box is not blue . it is red . the box is",
+        "choice_probabilities": {
+          "green": 0.0591,
+          "yellow": 0.1021,
+          "blue": 0.1534,
+          "red": 0.0535
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "FLIPPED: not blue, it is green",
+        "prompt": "the box is not blue . it is green . the box is",
+        "choice_probabilities": {
+          "green": 0.0475,
+          "yellow": 0.0904,
+          "blue": 0.1455,
+          "red": 0.0457
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "no story at all",
+        "prompt": "the box is",
+        "choice_probabilities": {
+          "green": 0.0053,
+          "yellow": 0.0122,
+          "blue": 0.038,
+          "red": 0.0079
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "original eval story",
+        "prompt": "the door is not open . it is closed . the door is",
+        "choice_probabilities": {
+          "closed": 0.1036,
+          "open": 0.0401,
+          "wide": 0.0013,
+          "missing": 0.0001
+        },
+        "top_choice": "closed"
+      },
+      {
+        "label": "FLIPPED: not closed, it is open",
+        "prompt": "the door is not closed . it is open . the door is",
+        "choice_probabilities": {
+          "closed": 0.1583,
+          "open": 0.1176,
+          "wide": 0.0032,
+          "missing": 0.0
+        },
+        "top_choice": "closed"
+      },
+      {
+        "label": "no story at all",
+        "prompt": "the door is",
+        "choice_probabilities": {
+          "closed": 0.0053,
+          "open": 0.0026,
+          "wide": 0.0005,
+          "missing": 0.0
+        },
+        "top_choice": "closed"
+      }
+    ],
+    "opposites": [
+      {
+        "stem": "cold",
+        "partner": "hot",
+        "partner_rank": 1,
+        "top": "hot"
+      },
+      {
+        "stem": "hot",
+        "partner": "cold",
+        "partner_rank": 1,
+        "top": "cold"
+      },
+      {
+        "stem": "full",
+        "partner": "empty",
+        "partner_rank": 1,
+        "top": "empty"
+      },
+      {
+        "stem": "empty",
+        "partner": "full",
+        "partner_rank": 2,
+        "top": "wet"
+      },
+      {
+        "stem": "big",
+        "partner": "small",
+        "partner_rank": 1,
+        "top": "small"
+      },
+      {
+        "stem": "small",
+        "partner": "big",
+        "partner_rank": 1,
+        "top": "big"
+      },
+      {
+        "stem": "fast",
+        "partner": "slow",
+        "partner_rank": 1,
+        "top": "slow"
+      },
+      {
+        "stem": "slow",
+        "partner": "fast",
+        "partner_rank": 1,
+        "top": "fast"
+      },
+      {
+        "stem": "happy",
+        "partner": "sad",
+        "partner_rank": 1,
+        "top": "sad"
+      },
+      {
+        "stem": "sad",
+        "partner": "happy",
+        "partner_rank": 1,
+        "top": "happy"
+      },
+      {
+        "stem": "clean",
+        "partner": "dirty",
+        "partner_rank": 1,
+        "top": "dirty"
+      },
+      {
+        "stem": "dirty",
+        "partner": "clean",
+        "partner_rank": 1,
+        "top": "clean"
+      },
+      {
+        "stem": "near",
+        "partner": "far",
+        "partner_rank": 1,
+        "top": "far"
+      },
+      {
+        "stem": "far",
+        "partner": "near",
+        "partner_rank": 1,
+        "top": "near"
+      },
+      {
+        "stem": "wet",
+        "partner": "dry",
+        "partner_rank": 1,
+        "top": "dry"
+      },
+      {
+        "stem": "dry",
+        "partner": "wet",
+        "partner_rank": 1,
+        "top": "wet"
+      },
+      {
+        "stem": "long",
+        "partner": "short",
+        "partner_rank": 1,
+        "top": "short"
+      },
+      {
+        "stem": "short",
+        "partner": "long",
+        "partner_rank": 1,
+        "top": "long"
+      },
+      {
+        "stem": "strong",
+        "partner": "weak",
+        "partner_rank": 1,
+        "top": "weak"
+      },
+      {
+        "stem": "weak",
+        "partner": "strong",
+        "partner_rank": 1,
+        "top": "strong"
+      },
+      {
+        "stem": "rich",
+        "partner": "poor",
+        "partner_rank": 2,
+        "top": "rich"
+      },
+      {
+        "stem": "poor",
+        "partner": "rich",
+        "partner_rank": 1,
+        "top": "rich"
+      },
+      {
+        "stem": "noisy",
+        "partner": "quiet",
+        "partner_rank": 1,
+        "top": "quiet"
+      }
+    ],
+    "opposites_top1": 21
+  },
+  "run3": {
+    "negation": [
+      {
+        "label": "original eval story",
+        "prompt": "the box is not red . it is blue . the box is",
+        "choice_probabilities": {
+          "green": 0.0398,
+          "yellow": 0.0681,
+          "blue": 0.1158,
+          "red": 0.0622
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "FLIPPED: not blue, it is red",
+        "prompt": "the box is not blue . it is red . the box is",
+        "choice_probabilities": {
+          "green": 0.0376,
+          "yellow": 0.0636,
+          "blue": 0.1106,
+          "red": 0.0571
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "FLIPPED: not blue, it is green",
+        "prompt": "the box is not blue . it is green . the box is",
+        "choice_probabilities": {
+          "green": 0.0354,
+          "yellow": 0.06,
+          "blue": 0.1132,
+          "red": 0.0574
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "no story at all",
+        "prompt": "the box is",
+        "choice_probabilities": {
+          "green": 0.0251,
+          "yellow": 0.0358,
+          "blue": 0.1112,
+          "red": 0.0398
+        },
+        "top_choice": "blue"
+      },
+      {
+        "label": "original eval story",
+        "prompt": "the door is not open . it is closed . the door is",
+        "choice_probabilities": {
+          "closed": 0.0392,
+          "open": 0.0341,
+          "wide": 0.0036,
+          "missing": null
+        },
+        "top_choice": "closed"
+      },
+      {
+        "label": "FLIPPED: not closed, it is open",
+        "prompt": "the door is not closed . it is open . the door is",
+        "choice_probabilities": {
+          "closed": 0.0408,
+          "open": 0.0356,
+          "wide": 0.0038,
+          "missing": null
+        },
+        "top_choice": "closed"
+      },
+      {
+        "label": "no story at all",
+        "prompt": "the door is",
+        "choice_probabilities": {
+          "closed": 0.0171,
+          "open": 0.0226,
+          "wide": 0.0004,
+          "missing": null
+        },
+        "top_choice": "open"
+      }
+    ],
+    "opposites": [
+      {
+        "stem": "cold",
+        "partner": "hot",
+        "partner_rank": 1,
+        "top": "hot"
+      },
+      {
+        "stem": "hot",
+        "partner": "cold",
+        "partner_rank": 6,
+        "top": "quiet"
+      },
+      {
+        "stem": "full",
+        "partner": "empty",
+        "partner_rank": 1,
+        "top": "empty"
+      },
+      {
+        "stem": "empty",
+        "partner": "full",
+        "partner_rank": 17,
+        "top": "clean"
+      },
+      {
+        "stem": "big",
+        "partner": "small",
+        "partner_rank": 2,
+        "top": "quiet"
+      },
+      {
+        "stem": "small",
+        "partner": "big",
+        "partner_rank": 2,
+        "top": "quiet"
+      },
+      {
+        "stem": "fast",
+        "partner": "slow",
+        "partner_rank": 6,
+        "top": "quiet"
+      },
+      {
+        "stem": "slow",
+        "partner": "fast",
+        "partner_rank": 2,
+        "top": "quiet"
+      },
+      {
+        "stem": "happy",
+        "partner": "sad",
+        "partner_rank": 2,
+        "top": "quiet"
+      },
+      {
+        "stem": "sad",
+        "partner": "happy",
+        "partner_rank": 3,
+        "top": "quiet"
+      },
+      {
+        "stem": "clean",
+        "partner": "dirty",
+        "partner_rank": 1,
+        "top": "dirty"
+      },
+      {
+        "stem": "dirty",
+        "partner": "clean",
+        "partner_rank": 1,
+        "top": "clean"
+      },
+      {
+        "stem": "near",
+        "partner": "far",
+        "partner_rank": 3,
+        "top": "quiet"
+      },
+      {
+        "stem": "far",
+        "partner": "near",
+        "partner_rank": 20,
+        "top": "wet"
+      },
+      {
+        "stem": "wet",
+        "partner": "dry",
+        "partner_rank": 1,
+        "top": "dry"
+      },
+      {
+        "stem": "dry",
+        "partner": "wet",
+        "partner_rank": 4,
+        "top": "dry"
+      },
+      {
+        "stem": "long",
+        "partner": "short",
+        "partner_rank": 2,
+        "top": "quiet"
+      },
+      {
+        "stem": "short",
+        "partner": "long",
+        "partner_rank": 2,
+        "top": "quiet"
+      },
+      {
+        "stem": "strong",
+        "partner": "weak",
+        "partner_rank": 8,
+        "top": "quiet"
+      },
+      {
+        "stem": "weak",
+        "partner": "strong",
+        "partner_rank": 5,
+        "top": "quiet"
+      },
+      {
+        "stem": "rich",
+        "partner": "poor",
+        "partner_rank": 19,
+        "top": "quiet"
+      },
+      {
+        "stem": "poor",
+        "partner": "rich",
+        "partner_rank": 8,
+        "top": "dry"
+      },
+      {
+        "stem": "noisy",
+        "partner": "quiet",
+        "partner_rank": 1,
+        "top": "quiet"
+      }
+    ],
+    "opposites_top1": 6
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "file": "literature/tom_sawyer_ch01-03.txt",
+      "bytes": 36481,
+      "sha256": "3a04bf166a52f2321bb44ac08a9a138aa33095b2974b309a6a65c300e1666c36",
+      "warnings": [],
+      "characters": 35323,
+      "passages": 491,
+      "unique_passages": 478,
+      "preview": "“Tom!”\nNo answer.\n“TOM!”\nNo answer.\n“What’s gone with that boy, I wonder? You TOM!”\nNo answer.\nThe old lady pulled her spectacles down and looked over them about the room; then she put them up and looked out under them. She seldom or never looked through them for so small a thing as a boy; they were"
+    },
+    {
+      "file": "negation.txt",
+      "bytes": 10730,
+      "sha256": "e5c05f36c401e79a761891bf6a0463ea75410733e28aeacc2230cb90f02d5d5b",
+      "warnings": [],
+      "characters": 10730,
+      "passages": 538,
+      "unique_passages": 338,
+      "preview": "the sky is not green . it is yellow . the sky is yellow .\nthe sky was not green . it was brown . so the sky is brown .\nthe wall is not grey . it is brown . the wall is brown .\nthe wall was not brown . it was grey . so the wall is grey .\nthe cup is not brown . it is green . the cup is green .\nthe cup"
+    },
+    {
+      "file": "opposites.txt",
+      "bytes": 12626,
+      "sha256": "c359bd1305f05b9d005da7d0e1dfc559a0aa2dcd284d2c8affb358b579c29424",
+      "warnings": [],
+      "characters": 12626,
+      "passages": 341,
+      "unique_passages": 329,
+      "preview": "the opposite of cold is hot .\ncold is the opposite of hot .\ncold and hot are opposites .\nif it is not cold then it is hot .\nwhen something is not cold it is hot .\none word means cold and its opposite means hot .\nhot is the opposite of cold .\nhot and cold are opposites .\nif it is not hot then it is c"
+    }
+  ],
+  "ignored": [],
+  "external_passages": 1370,
+  "mode": "classroom",
+  "base_passages": 6200,
+  "unique_passages": 5737,
+  "new_unique_passages": 1145,
+  "duplicates_removed": 1833,
+  "max_passage_tokens": 47,
+  "split_unit": "deduplicated passage, not source file"
+}

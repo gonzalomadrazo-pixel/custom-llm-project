@@ -220,7 +220,7 @@ function kmeans(g, ids, k = 8, seed = 7) {
 }
 
 /* ------------------------------------------------------------------ state + routing */
-const defaultRun = (() => { const idx = RUNS.map((r, i) => [r, i]).filter(([r]) => r.kind !== 'starter'); return idx.length ? idx[idx.length - 1][1] : RUNS.length - 1; })();
+const defaultRun = RUNS.findIndex(r => r.id === DATA.default_run) >= 0 ? RUNS.findIndex(r => r.id === DATA.default_run) : (() => { const idx = RUNS.map((r, i) => [r, i]).filter(([r]) => r.kind !== 'starter'); return idx.length ? idx[idx.length - 1][1] : RUNS.length - 1; })();
 const S = {
   run: Math.min(store.get('run', defaultRun), RUNS.length - 1),
   stage: store.get('stage', 'trained'),
