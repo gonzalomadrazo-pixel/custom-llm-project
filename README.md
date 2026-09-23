@@ -522,7 +522,7 @@ My answers, in my own words. The evidence table under each answer is taken direc
 
 ### Q1. Corpus and held-out data
 
-My corpus is mostly sentences with repeated patterns, plus information from the first few chapters of Tom Sawyer. I used only part of the book because I wanted to see how much a small amount of information could teach the model. I kept 10% of the data out of training so I could see if the model could work with information it had not seen before.
+My corpus is mostly sentences with repeated patterns. For the graded expanded experiment I added two teaching files, one for opposites and one for negation, because the starter model knew none of the words those evals need and both skills can be taught with short, simple sentences. In an optional third run I also added the first few chapters of Tom Sawyer. I used only part of the book because I wanted to see how much a small amount of information could teach the model. I kept 10% of the data out of training so I could see if the model could work with information it had not seen before.
 
 *Evidence ([manifests](llm_runs/20260922T060146_232475Z/corpus_manifest.json), [configs](llm_runs/20260922T060146_232475Z/config.json), [eval summaries](llm_runs/20260922T060146_232475Z/language_evals/final/eval_summary.json)).*
 
@@ -554,7 +554,7 @@ A token is basically a word that the model works with. Each token has an ID, whi
 
 ### Q3. What makes it a neural network, and how it learned
 
-It is a neural network because it learns by changing numbers inside the model to get better at predicting the next word. Loss tells us how wrong the model was, and the gradient tells it which direction to change those numbers. The optimizer then makes the change. In the example, the model made a very small change to one of its numbers because the previous prediction was slightly wrong.
+It is a neural network because it learns by changing numbers inside the model to get better at predicting the next word. Loss tells us how wrong the model was, and the gradient tells it which direction to change those numbers. The optimizer then makes the change. In the example, the gradient was positive, so the optimizer lowered one of the numbers by a very small amount, 0.00001, which is the size of the learning rate at that first step.
 
 *Evidence ([`history.json`](llm_runs/20260922T060146_232475Z/history.json), [`inspection.json`](llm_runs/20260922T060146_232475Z/inspection.json), §5.1, §5.4).* Run 2 has 121,280 adjustable numbers (parameters).
 
@@ -575,7 +575,7 @@ A loss of 5.69 at step 0 is almost exactly ln 283 = 5.65, the loss of guessing u
 
 ### Q4. Attention and context
 
-Attention is basically how the model decides which earlier words are important when trying to predict the next word. It cannot look at words that come later because it is supposed to predict the next word without knowing the future. My tests showed that the model did not really understand negation. For example, changing "not red" to "not blue" did not make it change its answer. I also think it would be interesting to see how adding Tom Sawyer changed the way the model connected words it already knew.
+Attention is basically how the model decides which earlier words are important when trying to predict the next word. It cannot look at words that come later because it is supposed to predict the next word without knowing the future. My tests showed that the model did not really understand negation. For example, changing "not red" to "not blue" did not make it change its answer. Adding Tom Sawyer also changed how the model connected words it already knew: it matched opposites correctly for only 6 of 23 words, down from 21.
 
 *Evidence (run 2, block 1, head 1, prefix `the customer`; [`inspection.json`](llm_runs/20260922T060146_232475Z/inspection.json)).* Each row shows how one position spreads its attention over itself and earlier positions. The zeros above the diagonal are the causal mask: no looking ahead.
 
@@ -671,4 +671,4 @@ The success measure is the flip test, not the eval score. `the box is not blue .
 
 ## 12. Attribution and AI assistance
 
-The starter notebook, eval suite, runner and chat script come from the course repository [pepealonso95/custom-llm](https://github.com/pepealonso95/custom-llm). The model is Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) under the MIT license. I used Claude (Anthropic) as an AI assistant, following the course's starter-prompt workflow: it set up the environment, ran both experiments and the evals, wrote the corpus generator, extracted the evidence and drafted the evidence sections of this README. For the optional run 3 it prepared the book excerpt, ran the notebook, evals and probes, and drafted §6.7. The run-3 question is mine, recorded before training. The hold-out tests in §6.8 are mine; it wrote their runner, the audit notes and the §6.8 text. My prediction (§2), my answers in §8 and my limitation and next experiment in §9 are my own words, written after the runs. It compiled the evidence tables under each §8 answer from the run files and drafted the implementation note in §9.
+The starter notebook, eval suite, runner and chat script come from the course repository [pepealonso95/custom-llm](https://github.com/pepealonso95/custom-llm). The model is Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) under the MIT license. I used Claude (Anthropic) as an AI assistant, following the course's starter-prompt workflow: it set up the environment, ran both experiments and the evals, wrote the corpus generator, extracted the evidence and drafted the evidence sections of this README. For the optional run 3 it prepared the book excerpt, ran the notebook, evals and probes, and drafted §6.7. The run-3 question is mine, recorded before training. The hold-out tests in §6.8 are mine; it wrote their runner, the audit notes and the §6.8 text. My prediction (§2), my answers in §8 and my limitation and next experiment in §9 are my own words, written after the runs. It compiled the evidence tables under each §8 answer from the run files and drafted the implementation note in §9. At my request, it also corrected three factual errors in my §8 answers after checking them against the evidence: in Q1, which files the graded experiment added and why; in Q3, the cause and size of the first update; and in Q4, stating the Tom Sawyer result instead of wondering about it.
