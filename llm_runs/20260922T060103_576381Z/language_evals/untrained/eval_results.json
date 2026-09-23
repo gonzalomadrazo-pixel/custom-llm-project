@@ -1,0 +1,1524 @@
+[
+  {
+    "id": "lang_01",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the customer explains the",
+    "choices": [
+      "service",
+      "traffic",
+      "juice",
+      "code"
+    ],
+    "expected": "service",
+    "predicted_choice": "juice",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "service": 0.0067441426217556,
+      "traffic": 0.007084574084728956,
+      "juice": 0.008111457340419292,
+      "code": 0.006236630957573652
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "mentioned travel system mentioned instructor merchandise client credit yesterday patient purchase brand course offering market bank discussion physician discussed consumer instructor merchandise course instructor",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs customer with service and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2026
+  },
+  {
+    "id": "lang_02",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the merchandise explains the",
+    "choices": [
+      "patient",
+      "interest",
+      "lesson",
+      "quality"
+    ],
+    "expected": "quality",
+    "predicted_choice": "lesson",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "patient": 0.007621035911142826,
+      "interest": 0.007325408980250359,
+      "lesson": 0.008462646044790745,
+      "quality": 0.007002922240644693
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "return apple credit loan they local interest juice we on route shopper interest data bicycle item educator lesson loan reviewed surgeon service banana today",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs merchandise with quality and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2027
+  },
+  {
+    "id": "lang_03",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the mortgage explains the",
+    "choices": [
+      "route",
+      "security",
+      "payment",
+      "harvest"
+    ],
+    "expected": "payment",
+    "predicted_choice": "harvest",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "route": 0.0062130289152264595,
+      "security": 0.00897300150245428,
+      "payment": 0.006357913371175528,
+      "harvest": 0.009260965511202812
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "truck helped loan juice return after after after instructor software patient offering return lesson support payment station apple brand client risk lecturer truck payment",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs mortgage with payment and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2028
+  },
+  {
+    "id": "lang_04",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the mango explains the",
+    "choices": [
+      "risk",
+      "juice",
+      "support",
+      "code"
+    ],
+    "expected": "juice",
+    "predicted_choice": "juice",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "risk": 0.00802132859826088,
+      "juice": 0.00803719088435173,
+      "support": 0.006469300016760826,
+      "code": 0.0062008267268538475
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "peach hospital route merchandise today purchase we orange us bus deposit buyer credit orange we taste on team helped order peach after interest physician",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs mango with juice and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2029
+  },
+  {
+    "id": "lang_05",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the bicycle explains the",
+    "choices": [
+      "journey",
+      "treatment",
+      "price",
+      "learning"
+    ],
+    "expected": "journey",
+    "predicted_choice": "journey",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "journey": 0.00868494063615799,
+      "treatment": 0.00555247301235795,
+      "price": 0.008274638094007969,
+      "learning": 0.006268473342061043
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "they care train nurse learning subscriber program another <UNK> was local price buyer purchase payment explains after security focused mentioned",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs bicycle with journey and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2030
+  },
+  {
+    "id": "lang_06",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the application explains the",
+    "choices": [
+      "taste",
+      "student",
+      "payment",
+      "security"
+    ],
+    "expected": "security",
+    "predicted_choice": "student",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "taste": 0.006489981897175312,
+      "student": 0.009122797288000584,
+      "payment": 0.006319183390587568,
+      "security": 0.008859462104737759
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "subscriber new question client school order we fruit school juice health orange educator pear different bus with service system lesson with purchase security loan",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs application with security and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2031
+  },
+  {
+    "id": "lang_07",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the surgeon explains the",
+    "choices": [
+      "fruit",
+      "traffic",
+      "patient",
+      "delivery"
+    ],
+    "expected": "patient",
+    "predicted_choice": "patient",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "fruit": 0.0066800545901060104,
+      "traffic": 0.007048122584819794,
+      "patient": 0.007413336541503668,
+      "delivery": 0.0049887411296367645
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "about focused investment yesterday instructor new merchandise selected . price bond station lesson orange lecturer merchandise deposit return bus detail about fruit pear merchandise",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs surgeon with patient and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2032
+  },
+  {
+    "id": "lang_08",
+    "group": "starter_patterns",
+    "category": "domain_context",
+    "prompt": "the report about the tutor explains the",
+    "choices": [
+      "journey",
+      "lesson",
+      "interest",
+      "design"
+    ],
+    "expected": "lesson",
+    "predicted_choice": "journey",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "journey": 0.008867761120200157,
+      "lesson": 0.008473427966237068,
+      "interest": 0.007369297090917826,
+      "design": 0.007777095306664705
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "bank route today subscriber loan compared we physician software was school during local service our loan nurse during truck station explains teacher the design",
+    "prompt_truncated": false,
+    "reason": "The starter repeatedly pairs tutor with lesson and related domain words. The other choices belong to different domains.",
+    "stage": "untrained",
+    "sample_seed": 2033
+  },
+  {
+    "id": "lang_09",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the customer and the service at the",
+    "choices": [
+      "store",
+      "market",
+      "bank",
+      "kitchen"
+    ],
+    "expected": "store",
+    "predicted_choice": "store",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "store": 0.007974222302436829,
+      "market": 0.005956245120614767,
+      "bank": 0.006678443867713213,
+      "kitchen": 0.006890770047903061
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "design consumer deposit kitchen loan returned of hospital travel today our data care purchase different market discussed orange consumer risk product train design compared",
+    "prompt_truncated": false,
+    "reason": "The starter associates customer and service with the store. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2034
+  },
+  {
+    "id": "lang_10",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the merchandise and the quality at the",
+    "choices": [
+      "bank",
+      "kitchen",
+      "station",
+      "market"
+    ],
+    "expected": "market",
+    "predicted_choice": "station",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "bank": 0.0067861187271773815,
+      "kitchen": 0.0069615584798157215,
+      "station": 0.008300229907035828,
+      "market": 0.005970949772745371
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "health order on travel quality purchase shopper kitchen mortgage traffic offering team offering the route a return they they course software price station update",
+    "prompt_truncated": false,
+    "reason": "The starter associates merchandise and quality with the market. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2035
+  },
+  {
+    "id": "lang_11",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the mortgage and the payment at the",
+    "choices": [
+      "station",
+      "office",
+      "bank",
+      "kitchen"
+    ],
+    "expected": "bank",
+    "predicted_choice": "station",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "station": 0.00840805098414421,
+      "office": 0.005338286515325308,
+      "bank": 0.006777792237699032,
+      "kitchen": 0.00699772872030735
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "was learned therapist orange with truck system professor car surgeon payment with customer discussed bank educator return the during mentioned lecturer yesterday mortgage a",
+    "prompt_truncated": false,
+    "reason": "The starter associates mortgage and payment with the bank. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2036
+  },
+  {
+    "id": "lang_12",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the mango and the juice at the",
+    "choices": [
+      "hospital",
+      "kitchen",
+      "station",
+      "office"
+    ],
+    "expected": "kitchen",
+    "predicted_choice": "hospital",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "hospital": 0.008200692012906075,
+      "kitchen": 0.006998458877205849,
+      "station": 0.008142993785440922,
+      "office": 0.005310130305588245
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "application we professor today update our of lesson instructor we tutor juice lesson important train review detail lesson return us compared of train risk",
+    "prompt_truncated": false,
+    "reason": "The starter associates mango and juice with the kitchen. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2037
+  },
+  {
+    "id": "lang_13",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the bicycle and the journey at the",
+    "choices": [
+      "station",
+      "office",
+      "hospital",
+      "school"
+    ],
+    "expected": "station",
+    "predicted_choice": "school",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "station": 0.008198675699532032,
+      "office": 0.0053300028666853905,
+      "hospital": 0.008122003637254238,
+      "school": 0.008797112852334976
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "support compared was in product office they consumer software discussion about website website price orange instructor question program system our deposit journey us mango",
+    "prompt_truncated": false,
+    "reason": "The starter associates bicycle and journey with the station. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2038
+  },
+  {
+    "id": "lang_14",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the application and the security at the",
+    "choices": [
+      "store",
+      "market",
+      "bank",
+      "office"
+    ],
+    "expected": "office",
+    "predicted_choice": "store",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "store": 0.007933669723570347,
+      "market": 0.005939428694546223,
+      "bank": 0.006764657329767942,
+      "office": 0.005316145718097687
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "discussed learning learning customer focused discussed professor they report merchandise taste yesterday with professor <UNK> purchase quality at traffic investment question returned course bus",
+    "prompt_truncated": false,
+    "reason": "The starter associates application and security with the office. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2039
+  },
+  {
+    "id": "lang_15",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the surgeon and the patient at the",
+    "choices": [
+      "bank",
+      "kitchen",
+      "hospital",
+      "market"
+    ],
+    "expected": "hospital",
+    "predicted_choice": "hospital",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "bank": 0.006729012355208397,
+      "kitchen": 0.007014126982539892,
+      "hospital": 0.008070758543908596,
+      "market": 0.006008523982018232
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "",
+    "prompt_truncated": false,
+    "reason": "The starter associates surgeon and patient with the hospital. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2040
+  },
+  {
+    "id": "lang_16",
+    "group": "starter_patterns",
+    "category": "domain_place",
+    "prompt": "the team discussed the tutor and the lesson at the",
+    "choices": [
+      "station",
+      "school",
+      "bank",
+      "kitchen"
+    ],
+    "expected": "school",
+    "predicted_choice": "school",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "station": 0.008117618970572948,
+      "school": 0.008776867762207985,
+      "bank": 0.006688909139484167,
+      "kitchen": 0.00695051858201623
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "bond at apple code was order traffic merchandise was buyer banana local credit of purchase tutor doctor health helped market selected <UNK> during investment",
+    "prompt_truncated": false,
+    "reason": "The starter associates tutor and lesson with the school. Sentences containing this exact prompt are reserved before training.",
+    "stage": "untrained",
+    "sample_seed": 2041
+  },
+  {
+    "id": "lang_17",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "our hospital discussed the nurse and the",
+    "choices": [
+      "health",
+      "traffic",
+      "price",
+      "juice"
+    ],
+    "expected": "health",
+    "predicted_choice": "health",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "health": 0.00860583409667015,
+      "traffic": 0.007356924936175346,
+      "price": 0.008053122088313103,
+      "juice": 0.008224708028137684
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "platform and helped car bicycle route our application in bond therapist at they learning harvest we teacher patient store important <UNK> in bank risk",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2042
+  },
+  {
+    "id": "lang_18",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "yesterday the school discussed the educator and the",
+    "choices": [
+      "security",
+      "risk",
+      "harvest",
+      "student"
+    ],
+    "expected": "student",
+    "predicted_choice": "risk",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "security": 0.007275130599737167,
+      "risk": 0.008755501359701157,
+      "harvest": 0.007441175170242786,
+      "student": 0.0076717231422662735
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "credit educator code our therapist station mango offering loan health report train reviewed fruit of mango and package professor taxi bank deposit taxi orange",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2043
+  },
+  {
+    "id": "lang_19",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "the bank report discussed the bond and the",
+    "choices": [
+      "code",
+      "taste",
+      "return",
+      "care"
+    ],
+    "expected": "return",
+    "predicted_choice": "taste",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "code": 0.0061820209957659245,
+      "taste": 0.007259027566760778,
+      "return": 0.006268700119107962,
+      "care": 0.0062723346054553986
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "today focused therapist banana lesson merchandise <UNK> truck bank purchase quality investment bank mortgage investment treatment of dentist brand office team hospital patient lesson",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2044
+  },
+  {
+    "id": "lang_20",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "our kitchen report discussed the pear and the",
+    "choices": [
+      "data",
+      "fruit",
+      "order",
+      "payment"
+    ],
+    "expected": "fruit",
+    "predicted_choice": "fruit",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "data": 0.005782289430499077,
+      "fruit": 0.008974636904895306,
+      "order": 0.0065659042447805405,
+      "payment": 0.007531729526817799
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "on treatment local checking detail student during recommended return store shopper different course of yesterday after bank doctor return they yesterday loan traffic consumer",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2045
+  },
+  {
+    "id": "lang_21",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "the station report compared the bus and the",
+    "choices": [
+      "route",
+      "lesson",
+      "design",
+      "patient"
+    ],
+    "expected": "route",
+    "predicted_choice": "lesson",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "route": 0.007040738593786955,
+      "lesson": 0.009341097436845303,
+      "design": 0.008310415782034397,
+      "patient": 0.006350348703563213
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "tutor yesterday after code of customer selected doctor return return they teacher bus return patient support client health tutor different important purchase mango us",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2046
+  },
+  {
+    "id": "lang_22",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "yesterday our office discussed the platform and the",
+    "choices": [
+      "harvest",
+      "journey",
+      "treatment",
+      "update"
+    ],
+    "expected": "update",
+    "predicted_choice": "update",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "harvest": 0.007398958317935467,
+      "journey": 0.007682327181100845,
+      "treatment": 0.006695915944874287,
+      "update": 0.008038580417633057
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "office apple educator journey code during educator compared professor treatment buyer compared hospital understand student and doctor student today was lecturer compared apple selected",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2047
+  },
+  {
+    "id": "lang_23",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "the store report discussed the subscriber and the",
+    "choices": [
+      "health",
+      "interest",
+      "support",
+      "traffic"
+    ],
+    "expected": "support",
+    "predicted_choice": "health",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "health": 0.007550766691565514,
+      "interest": 0.007540018297731876,
+      "support": 0.007376203313469887,
+      "traffic": 0.007439367473125458
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "learned tutor client banana store was different train in",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2048
+  },
+  {
+    "id": "lang_24",
+    "group": "starter_transfer",
+    "category": "new_wording",
+    "prompt": "our market report compared the package and the",
+    "choices": [
+      "code",
+      "delivery",
+      "student",
+      "juice"
+    ],
+    "expected": "delivery",
+    "predicted_choice": "student",
+    "score": 0,
+    "status": "scored",
+    "choice_probabilities": {
+      "code": 0.006362996529787779,
+      "delivery": 0.0051441616378724575,
+      "student": 0.007569555193185806,
+      "juice": 0.0067168232053518295
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "store report bond station team quality educator train shopper returned offering dentist kitchen at selected about purchase health harvest item recommended support educator kitchen",
+    "prompt_truncated": false,
+    "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
+    "stage": "untrained",
+    "sample_seed": 2049
+  },
+  {
+    "id": "lang_25",
+    "group": "extend_corpus",
+    "category": "grammar",
+    "prompt": "one bird",
+    "choices": [
+      "is",
+      "are",
+      "were",
+      "am"
+    ],
+    "expected": "is",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "bird",
+      "one"
+    ],
+    "unknown_choices": [
+      "is",
+      "are",
+      "were",
+      "am"
+    ],
+    "generated_text": "compared deposit shopper design the travel application question treatment health health interest compared deposit student product station banana us discussion",
+    "prompt_truncated": false,
+    "reason": "A singular third-person subject takes is in the present tense.",
+    "stage": "untrained",
+    "sample_seed": 2050
+  },
+  {
+    "id": "lang_26",
+    "group": "extend_corpus",
+    "category": "grammar",
+    "prompt": "the dogs",
+    "choices": [
+      "is",
+      "am",
+      "was",
+      "are"
+    ],
+    "expected": "are",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "dogs"
+    ],
+    "unknown_choices": [
+      "is",
+      "am",
+      "are"
+    ],
+    "generated_text": "system banana truck support instructor taste support return . program program apple interest nurse a code patient security yesterday reviewed mentioned course station lecturer",
+    "prompt_truncated": false,
+    "reason": "A plural subject takes are among these present/past singular distractors.",
+    "stage": "untrained",
+    "sample_seed": 2051
+  },
+  {
+    "id": "lang_27",
+    "group": "extend_corpus",
+    "category": "grammar",
+    "prompt": "yesterday she",
+    "choices": [
+      "walking",
+      "walk",
+      "walked",
+      "walks"
+    ],
+    "expected": "walked",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "she"
+    ],
+    "unknown_choices": [
+      "walking",
+      "walk",
+      "walked",
+      "walks"
+    ],
+    "generated_text": "compared merchandise discussed school dentist shopper question doctor after harvest merchandise another customer . learning merchandise professor . new juice a train new question",
+    "prompt_truncated": false,
+    "reason": "The explicit past-time cue calls for the past-tense form walked.",
+    "stage": "untrained",
+    "sample_seed": 2052
+  },
+  {
+    "id": "lang_28",
+    "group": "extend_corpus",
+    "category": "opposites",
+    "prompt": "the opposite of hot is",
+    "choices": [
+      "fast",
+      "cold",
+      "warm",
+      "heavy"
+    ],
+    "expected": "cold",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "hot",
+      "is",
+      "opposite"
+    ],
+    "unknown_choices": [
+      "fast",
+      "cold",
+      "warm",
+      "heavy"
+    ],
+    "generated_text": "car learning they another physician bus tutor orange credit new today pear route team system code patient apple price",
+    "prompt_truncated": false,
+    "reason": "Hot and cold form the intended temperature contrast.",
+    "stage": "untrained",
+    "sample_seed": 2053
+  },
+  {
+    "id": "lang_29",
+    "group": "extend_corpus",
+    "category": "opposites",
+    "prompt": "the opposite of empty is",
+    "choices": [
+      "full",
+      "quiet",
+      "early",
+      "soft"
+    ],
+    "expected": "full",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "empty",
+      "is",
+      "opposite"
+    ],
+    "unknown_choices": [
+      "full",
+      "quiet",
+      "early",
+      "soft"
+    ],
+    "generated_text": "buyer treatment market checking understand compared us traffic learning review us different application taste care course data payment office traffic understand treatment returned buyer",
+    "prompt_truncated": false,
+    "reason": "Empty and full contrast how much a container holds.",
+    "stage": "untrained",
+    "sample_seed": 2054
+  },
+  {
+    "id": "lang_30",
+    "group": "extend_corpus",
+    "category": "opposites",
+    "prompt": "the opposite of noisy is",
+    "choices": [
+      "loud",
+      "round",
+      "late",
+      "quiet"
+    ],
+    "expected": "quiet",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "is",
+      "noisy",
+      "opposite"
+    ],
+    "unknown_choices": [
+      "loud",
+      "round",
+      "late",
+      "quiet"
+    ],
+    "generated_text": ". data data train with doctor explains selected journey has teacher learning store buyer on at order during update mango payment teacher another report",
+    "prompt_truncated": false,
+    "reason": "Noisy and quiet contrast the amount of sound.",
+    "stage": "untrained",
+    "sample_seed": 2055
+  },
+  {
+    "id": "lang_31",
+    "group": "extend_corpus",
+    "category": "negation",
+    "prompt": "the box is not red . it is blue . the box is",
+    "choices": [
+      "green",
+      "yellow",
+      "blue",
+      "red"
+    ],
+    "expected": "blue",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "blue",
+      "box",
+      "is",
+      "it",
+      "not",
+      "red"
+    ],
+    "unknown_choices": [
+      "green",
+      "yellow",
+      "blue",
+      "red"
+    ],
+    "generated_text": "package team lecturer lesson treatment treatment discussed returned purchase checking they focused taxi checking traffic platform investment patient price quality explains delivery professor our",
+    "prompt_truncated": false,
+    "reason": "Use the positive color statement rather than the explicitly rejected color.",
+    "stage": "untrained",
+    "sample_seed": 2056
+  },
+  {
+    "id": "lang_32",
+    "group": "extend_corpus",
+    "category": "negation",
+    "prompt": "ava did not buy tea . she bought milk . ava bought",
+    "choices": [
+      "rice",
+      "milk",
+      "tea",
+      "bread"
+    ],
+    "expected": "milk",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "ava",
+      "bought",
+      "buy",
+      "did",
+      "milk",
+      "not",
+      "she",
+      "tea"
+    ],
+    "unknown_choices": [
+      "rice",
+      "milk",
+      "tea",
+      "bread"
+    ],
+    "generated_text": "customer delivery platform health yesterday harvest focused package physician question lesson surgeon bank physician price patient interest",
+    "prompt_truncated": false,
+    "reason": "The purchase is milk; the tea purchase is explicitly negated.",
+    "stage": "untrained",
+    "sample_seed": 2057
+  },
+  {
+    "id": "lang_33",
+    "group": "extend_corpus",
+    "category": "negation",
+    "prompt": "the door is not open . it is closed . the door is",
+    "choices": [
+      "closed",
+      "open",
+      "wide",
+      "missing"
+    ],
+    "expected": "closed",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "closed",
+      "door",
+      "is",
+      "it",
+      "not",
+      "open"
+    ],
+    "unknown_choices": [
+      "closed",
+      "open",
+      "wide",
+      "missing"
+    ],
+    "generated_text": "recommended train tutor software fruit mango and package dentist checking discussion consumer deposit train lesson",
+    "prompt_truncated": false,
+    "reason": "Respect not open and the explicit statement closed.",
+    "stage": "untrained",
+    "sample_seed": 2058
+  },
+  {
+    "id": "lang_34",
+    "group": "extend_corpus",
+    "category": "reference",
+    "prompt": "maya lent a book to leo . leo thanked",
+    "choices": [
+      "leo",
+      "nora",
+      "omar",
+      "maya"
+    ],
+    "expected": "maya",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "book",
+      "lent",
+      "leo",
+      "maya",
+      "thanked",
+      "to"
+    ],
+    "unknown_choices": [
+      "leo",
+      "nora",
+      "omar",
+      "maya"
+    ],
+    "generated_text": "fruit lecturer after educator helped patient on risk loan truck market car data route price lesson we program about price treatment taste service report",
+    "prompt_truncated": false,
+    "reason": "Leo thanks the person who lent the book, Maya.",
+    "stage": "untrained",
+    "sample_seed": 2059
+  },
+  {
+    "id": "lang_35",
+    "group": "extend_corpus",
+    "category": "reference",
+    "prompt": "ella gave finn a pencil . the person who received the pencil was",
+    "choices": [
+      "sara",
+      "noah",
+      "finn",
+      "ella"
+    ],
+    "expected": "finn",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "ella",
+      "finn",
+      "gave",
+      "pencil",
+      "person",
+      "received",
+      "who"
+    ],
+    "unknown_choices": [
+      "sara",
+      "noah",
+      "finn",
+      "ella"
+    ],
+    "generated_text": "store order during course travel hospital website and explains hospital <UNK> different treatment system we risk fruit lecturer subscriber returned doctor price station product",
+    "prompt_truncated": false,
+    "reason": "Finn is the recipient rather than the giver.",
+    "stage": "untrained",
+    "sample_seed": 2060
+  },
+  {
+    "id": "lang_36",
+    "group": "extend_corpus",
+    "category": "reference",
+    "prompt": "omar called nina . nina answered the call from",
+    "choices": [
+      "emma",
+      "omar",
+      "nina",
+      "luca"
+    ],
+    "expected": "omar",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "answered",
+      "call",
+      "called",
+      "from",
+      "nina",
+      "omar"
+    ],
+    "unknown_choices": [
+      "emma",
+      "omar",
+      "nina",
+      "luca"
+    ],
+    "generated_text": "health in price route mortgage bank credit we we shopper code review <UNK> customer tutor returned mentioned office code credit program . taste apple",
+    "prompt_truncated": false,
+    "reason": "Omar is the caller; Nina is the person answering.",
+    "stage": "untrained",
+    "sample_seed": 2061
+  },
+  {
+    "id": "lang_37",
+    "group": "extend_corpus",
+    "category": "sequence",
+    "prompt": "first wash the cup . then dry it . the last action is",
+    "choices": [
+      "dry",
+      "wash",
+      "buy",
+      "fill"
+    ],
+    "expected": "dry",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "action",
+      "cup",
+      "dry",
+      "first",
+      "is",
+      "it",
+      "last",
+      "then",
+      "wash"
+    ],
+    "unknown_choices": [
+      "dry",
+      "wash",
+      "buy",
+      "fill"
+    ],
+    "generated_text": "investment platform website school mortgage delivery health buyer security review learned after product report credit the website another yesterday about bicycle bond software report",
+    "prompt_truncated": false,
+    "reason": "Drying follows washing in the stated sequence.",
+    "stage": "untrained",
+    "sample_seed": 2062
+  },
+  {
+    "id": "lang_38",
+    "group": "extend_corpus",
+    "category": "sequence",
+    "prompt": "lunch happens after breakfast . the earlier meal is",
+    "choices": [
+      "lunch",
+      "dinner",
+      "supper",
+      "breakfast"
+    ],
+    "expected": "breakfast",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "breakfast",
+      "earlier",
+      "happens",
+      "is",
+      "lunch",
+      "meal"
+    ],
+    "unknown_choices": [
+      "lunch",
+      "dinner",
+      "supper",
+      "breakfast"
+    ],
+    "generated_text": "market kitchen order returned shopper product investment shopper risk learning we travel discussed website after teacher order shopper apple traffic credit detail station peach",
+    "prompt_truncated": false,
+    "reason": "The relation after makes breakfast the earlier meal.",
+    "stage": "untrained",
+    "sample_seed": 2063
+  },
+  {
+    "id": "lang_39",
+    "group": "extend_corpus",
+    "category": "sequence",
+    "prompt": "the train arrived before the bus . the vehicle that arrived later was the",
+    "choices": [
+      "taxi",
+      "car",
+      "bus",
+      "train"
+    ],
+    "expected": "bus",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "arrived",
+      "before",
+      "later",
+      "that",
+      "vehicle"
+    ],
+    "unknown_choices": [],
+    "generated_text": "juice truck important understand review travel a mango security focused offering package buyer explains journey station buyer has client mentioned doctor detail of orange",
+    "prompt_truncated": false,
+    "reason": "Reverse the stated before relation to identify the later arrival.",
+    "stage": "untrained",
+    "sample_seed": 2064
+  },
+  {
+    "id": "lang_40",
+    "group": "extend_corpus",
+    "category": "spatial_relations",
+    "prompt": "the book is inside the bag . the bag contains the",
+    "choices": [
+      "lamp",
+      "book",
+      "shelf",
+      "desk"
+    ],
+    "expected": "book",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "bag",
+      "book",
+      "contains",
+      "inside",
+      "is"
+    ],
+    "unknown_choices": [
+      "lamp",
+      "book",
+      "shelf",
+      "desk"
+    ],
+    "generated_text": "client data product investment educator checking software lesson quality risk peach returned lecturer item station",
+    "prompt_truncated": false,
+    "reason": "Restate inside as the inverse relation contains.",
+    "stage": "untrained",
+    "sample_seed": 2065
+  },
+  {
+    "id": "lang_41",
+    "group": "extend_corpus",
+    "category": "spatial_relations",
+    "prompt": "the lamp is above the desk . the desk is",
+    "choices": [
+      "below",
+      "above",
+      "inside",
+      "beside"
+    ],
+    "expected": "below",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "above",
+      "desk",
+      "is",
+      "lamp"
+    ],
+    "unknown_choices": [
+      "below",
+      "above",
+      "inside",
+      "beside"
+    ],
+    "generated_text": "truck fruit support at purchase fruit they yesterday lecturer of <UNK> lesson lecturer treatment fruit bank discussion returned student tutor mortgage educator team bicycle",
+    "prompt_truncated": false,
+    "reason": "Above and below are inverse vertical relations.",
+    "stage": "untrained",
+    "sample_seed": 2066
+  },
+  {
+    "id": "lang_42",
+    "group": "extend_corpus",
+    "category": "spatial_relations",
+    "prompt": "the ball is left of the box . the box is to the",
+    "choices": [
+      "left",
+      "north",
+      "south",
+      "right"
+    ],
+    "expected": "right",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "ball",
+      "box",
+      "is",
+      "left",
+      "to"
+    ],
+    "unknown_choices": [
+      "left",
+      "north",
+      "south",
+      "right"
+    ],
+    "generated_text": "focused explains instructor treatment discussed surgeon platform client delivery website during bus selected apple lesson understand traffic payment subscriber was website nurse educator product",
+    "prompt_truncated": false,
+    "reason": "Reverse the stated horizontal relation; complete with right.",
+    "stage": "untrained",
+    "sample_seed": 2067
+  },
+  {
+    "id": "lang_43",
+    "group": "extend_corpus",
+    "category": "everyday_knowledge",
+    "prompt": "water freezes into",
+    "choices": [
+      "sand",
+      "wood",
+      "ice",
+      "steam"
+    ],
+    "expected": "ice",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "freezes",
+      "into",
+      "water"
+    ],
+    "unknown_choices": [
+      "sand",
+      "wood",
+      "ice",
+      "steam"
+    ],
+    "generated_text": "bond subscriber team software dentist traffic a station product taxi travel route has reviewed therapist about product learned train credit banana they report train",
+    "prompt_truncated": false,
+    "reason": "Freezing changes liquid water into ice.",
+    "stage": "untrained",
+    "sample_seed": 2068
+  },
+  {
+    "id": "lang_44",
+    "group": "extend_corpus",
+    "category": "everyday_knowledge",
+    "prompt": "a person uses an umbrella to stay",
+    "choices": [
+      "asleep",
+      "dry",
+      "wet",
+      "hungry"
+    ],
+    "expected": "dry",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "an",
+      "person",
+      "stay",
+      "to",
+      "umbrella",
+      "uses"
+    ],
+    "unknown_choices": [
+      "asleep",
+      "dry",
+      "wet",
+      "hungry"
+    ],
+    "generated_text": "us explains quality system explains system apple purchase yesterday checking on purchase truck train returned detail instructor student professor application doctor our order orange",
+    "prompt_truncated": false,
+    "reason": "An umbrella typically keeps a person dry in rain.",
+    "stage": "untrained",
+    "sample_seed": 2069
+  },
+  {
+    "id": "lang_45",
+    "group": "extend_corpus",
+    "category": "everyday_knowledge",
+    "prompt": "to see in a dark room we turn on a",
+    "choices": [
+      "light",
+      "pillow",
+      "spoon",
+      "shoe"
+    ],
+    "expected": "light",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "dark",
+      "room",
+      "see",
+      "to",
+      "turn"
+    ],
+    "unknown_choices": [
+      "light",
+      "pillow",
+      "spoon",
+      "shoe"
+    ],
+    "generated_text": "explains taxi credit health local item tutor harvest compared item bicycle peach taxi risk and offering deposit mortgage recommended product different <UNK> apple consumer",
+    "prompt_truncated": false,
+    "reason": "A light illuminates a dark room.",
+    "stage": "untrained",
+    "sample_seed": 2070
+  },
+  {
+    "id": "lang_46",
+    "group": "extend_corpus",
+    "category": "categories_and_analogies",
+    "prompt": "a robin is a bird . a salmon is a",
+    "choices": [
+      "bird",
+      "tree",
+      "tool",
+      "fish"
+    ],
+    "expected": "fish",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "bird",
+      "is",
+      "robin",
+      "salmon"
+    ],
+    "unknown_choices": [
+      "bird",
+      "tree",
+      "tool",
+      "fish"
+    ],
+    "generated_text": "health physician student checking nurse order they hospital on learning mortgage treatment store surgeon traffic after payment bicycle car recommended juice hospital today selected",
+    "prompt_truncated": false,
+    "reason": "Salmon belongs to the fish category.",
+    "stage": "untrained",
+    "sample_seed": 2071
+  },
+  {
+    "id": "lang_47",
+    "group": "extend_corpus",
+    "category": "categories_and_analogies",
+    "prompt": "a puppy grows into a dog . a kitten grows into a",
+    "choices": [
+      "duck",
+      "goat",
+      "cat",
+      "horse"
+    ],
+    "expected": "cat",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "dog",
+      "grows",
+      "into",
+      "kitten",
+      "puppy"
+    ],
+    "unknown_choices": [
+      "duck",
+      "goat",
+      "cat",
+      "horse"
+    ],
+    "generated_text": "taxi reviewed understand consumer mango journey quality item school learned train instructor travel today bank tutor update travel local bond report review checking store",
+    "prompt_truncated": false,
+    "reason": "Match the young animal to its adult category.",
+    "stage": "untrained",
+    "sample_seed": 2072
+  },
+  {
+    "id": "lang_48",
+    "group": "extend_corpus",
+    "category": "categories_and_analogies",
+    "prompt": "a carrot is a vegetable . an apple is a",
+    "choices": [
+      "fabric",
+      "fruit",
+      "metal",
+      "vehicle"
+    ],
+    "expected": "fruit",
+    "predicted_choice": null,
+    "score": 0,
+    "status": "out_of_vocabulary",
+    "choice_probabilities": {},
+    "unknown_prompt_words": [
+      "an",
+      "carrot",
+      "is",
+      "vegetable"
+    ],
+    "unknown_choices": [
+      "fabric",
+      "metal",
+      "vehicle"
+    ],
+    "generated_text": "returned banana question therapist yesterday professor purchase shopper team selected . patient quality focused data and and return software package recommended physician order important",
+    "prompt_truncated": false,
+    "reason": "An apple belongs to the fruit category in this food classification.",
+    "stage": "untrained",
+    "sample_seed": 2073
+  }
+]

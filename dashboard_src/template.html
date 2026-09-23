@@ -1,0 +1,75 @@
+<title>nanoGPT Lab Bench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>/*STYLE*/</style>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <a class="brand" href="#overview" data-go="overview" aria-label="nanoGPT Lab Bench, overview">
+      <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55">
+          <path d="M5 7 L14 5 M5 7 L14 14 M5 14 L14 5 M5 14 L14 14 M5 14 L14 23 M5 21 L14 14 M5 21 L14 23 M14 5 L23 14 M14 14 L23 14 M14 23 L23 14"/>
+        </g>
+        <g fill="currentColor"><circle cx="5" cy="7" r="2.2"/><circle cx="5" cy="14" r="2.2"/><circle cx="5" cy="21" r="2.2"/><circle cx="14" cy="5" r="2.2"/><circle cx="14" cy="14" r="2.2"/><circle cx="14" cy="23" r="2.2"/></g>
+        <circle cx="23" cy="14" r="3" fill="var(--accent)"/>
+      </svg>
+      <span class="brand-text"><b>nanoGPT</b> Lab Bench</span>
+    </a>
+    <div class="run-controls">
+      <label class="field-inline" for="run-select"><span class="lbl">Run</span>
+        <select id="run-select"></select>
+      </label>
+      <div class="seg" role="group" aria-label="Model stage">
+        <button type="button" id="stage-untrained" data-stage="untrained">Untrained</button>
+        <button type="button" id="stage-trained" data-stage="trained">Trained</button>
+      </div>
+    </div>
+    <button type="button" class="search-trigger" id="search-open" aria-label="Search everything">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>Search requirements, words, evals…</span><kbd>⌘K</kbd>
+    </button>
+  </header>
+
+  <nav class="rail" id="rail" aria-label="Sections">
+    <a href="#overview" data-go="overview">Overview</a>
+    <a href="#network" data-go="network">Word network</a>
+    <a href="#lab" data-go="lab">Transformer lab</a>
+    <a href="#chat" data-go="chat">Chat</a>
+    <a href="#training" data-go="training">Training evidence</a>
+    <a href="#evals" data-go="evals">Evals</a>
+    <a href="#corpus" data-go="corpus">Corpus &amp; vocabulary</a>
+    <a href="#checklist" data-go="checklist">Assignment checklist</a>
+    <a href="#glossary" data-go="glossary">Concepts</a>
+    <div class="rail-foot" id="rail-foot"></div>
+  </nav>
+
+  <main class="main" id="main">
+    <section class="section" id="sec-overview" data-section="overview"></section>
+    <section class="section" id="sec-network" data-section="network" hidden></section>
+    <section class="section" id="sec-lab" data-section="lab" hidden></section>
+    <section class="section" id="sec-chat" data-section="chat" hidden></section>
+    <section class="section" id="sec-training" data-section="training" hidden></section>
+    <section class="section" id="sec-evals" data-section="evals" hidden></section>
+    <section class="section" id="sec-corpus" data-section="corpus" hidden></section>
+    <section class="section" id="sec-checklist" data-section="checklist" hidden></section>
+    <section class="section" id="sec-glossary" data-section="glossary" hidden></section>
+  </main>
+</div>
+
+<div class="search-overlay" id="search" hidden>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-input-row">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Try: gradient, negation, opposites, README, chat, customer, lang_31…">
+      <kbd>esc</kbd>
+    </div>
+    <div class="search-scopes" id="search-scopes"></div>
+    <div class="search-results" id="search-results" role="listbox"></div>
+  </div>
+</div>
+<div class="tooltip" id="tooltip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>/*APP*/</script>

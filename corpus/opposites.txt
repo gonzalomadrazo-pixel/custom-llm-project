@@ -1,0 +1,341 @@
+the opposite of cold is hot .
+cold is the opposite of hot .
+cold and hot are opposites .
+if it is not cold then it is hot .
+when something is not cold it is hot .
+one word means cold and its opposite means hot .
+hot is the opposite of cold .
+hot and cold are opposites .
+if it is not hot then it is cold .
+when something is not hot it is cold .
+one word means hot and its opposite means cold .
+the opposite of full is empty .
+full is the opposite of empty .
+full and empty are opposites .
+if it is not full then it is empty .
+when something is not full it is empty .
+one word means full and its opposite means empty .
+empty is the opposite of full .
+empty and full are opposites .
+if it is not empty then it is full .
+when something is not empty it is full .
+one word means empty and its opposite means full .
+the opposite of quiet is noisy .
+quiet is the opposite of noisy .
+quiet and noisy are opposites .
+if it is not quiet then it is noisy .
+when something is not quiet it is noisy .
+one word means quiet and its opposite means noisy .
+noisy is the opposite of quiet .
+noisy and quiet are opposites .
+if it is not noisy then it is quiet .
+when something is not noisy it is quiet .
+one word means noisy and its opposite means quiet .
+the opposite of quiet is loud .
+quiet is the opposite of loud .
+quiet and loud are opposites .
+if it is not quiet then it is loud .
+when something is not quiet it is loud .
+one word means quiet and its opposite means loud .
+the opposite of loud is quiet .
+loud is the opposite of quiet .
+loud and quiet are opposites .
+if it is not loud then it is quiet .
+when something is not loud it is quiet .
+one word means loud and its opposite means quiet .
+the opposite of big is small .
+big is the opposite of small .
+big and small are opposites .
+if it is not big then it is small .
+when something is not big it is small .
+one word means big and its opposite means small .
+the opposite of small is big .
+small is the opposite of big .
+small and big are opposites .
+if it is not small then it is big .
+when something is not small it is big .
+one word means small and its opposite means big .
+the opposite of fast is slow .
+fast is the opposite of slow .
+fast and slow are opposites .
+if it is not fast then it is slow .
+when something is not fast it is slow .
+one word means fast and its opposite means slow .
+the opposite of slow is fast .
+slow is the opposite of fast .
+slow and fast are opposites .
+if it is not slow then it is fast .
+when something is not slow it is fast .
+one word means slow and its opposite means fast .
+the opposite of open is closed .
+open is the opposite of closed .
+open and closed are opposites .
+if it is not open then it is closed .
+when something is not open it is closed .
+one word means open and its opposite means closed .
+the opposite of closed is open .
+closed is the opposite of open .
+closed and open are opposites .
+if it is not closed then it is open .
+when something is not closed it is open .
+one word means closed and its opposite means open .
+the opposite of light is heavy .
+light is the opposite of heavy .
+light and heavy are opposites .
+if it is not light then it is heavy .
+when something is not light it is heavy .
+one word means light and its opposite means heavy .
+the opposite of heavy is light .
+heavy is the opposite of light .
+heavy and light are opposites .
+if it is not heavy then it is light .
+when something is not heavy it is light .
+one word means heavy and its opposite means light .
+the opposite of happy is sad .
+happy is the opposite of sad .
+happy and sad are opposites .
+if it is not happy then it is sad .
+when something is not happy it is sad .
+one word means happy and its opposite means sad .
+the opposite of sad is happy .
+sad is the opposite of happy .
+sad and happy are opposites .
+if it is not sad then it is happy .
+when something is not sad it is happy .
+one word means sad and its opposite means happy .
+the opposite of up is down .
+up is the opposite of down .
+up and down are opposites .
+if it is not up then it is down .
+when something is not up it is down .
+one word means up and its opposite means down .
+the opposite of down is up .
+down is the opposite of up .
+down and up are opposites .
+if it is not down then it is up .
+when something is not down it is up .
+one word means down and its opposite means up .
+the opposite of hard is soft .
+hard is the opposite of soft .
+hard and soft are opposites .
+if it is not hard then it is soft .
+when something is not hard it is soft .
+one word means hard and its opposite means soft .
+the opposite of soft is hard .
+soft is the opposite of hard .
+soft and hard are opposites .
+if it is not soft then it is hard .
+when something is not soft it is hard .
+one word means soft and its opposite means hard .
+the opposite of clean is dirty .
+clean is the opposite of dirty .
+clean and dirty are opposites .
+if it is not clean then it is dirty .
+when something is not clean it is dirty .
+one word means clean and its opposite means dirty .
+the opposite of dirty is clean .
+dirty is the opposite of clean .
+dirty and clean are opposites .
+if it is not dirty then it is clean .
+when something is not dirty it is clean .
+one word means dirty and its opposite means clean .
+the opposite of near is far .
+near is the opposite of far .
+near and far are opposites .
+if it is not near then it is far .
+when something is not near it is far .
+one word means near and its opposite means far .
+the opposite of far is near .
+far is the opposite of near .
+far and near are opposites .
+if it is not far then it is near .
+when something is not far it is near .
+one word means far and its opposite means near .
+the opposite of high is low .
+high is the opposite of low .
+high and low are opposites .
+if it is not high then it is low .
+when something is not high it is low .
+one word means high and its opposite means low .
+the opposite of low is high .
+low is the opposite of high .
+low and high are opposites .
+if it is not low then it is high .
+when something is not low it is high .
+one word means low and its opposite means high .
+the opposite of old is new .
+old is the opposite of new .
+old and new are opposites .
+if it is not old then it is new .
+when something is not old it is new .
+one word means old and its opposite means new .
+the opposite of new is old .
+new is the opposite of old .
+new and old are opposites .
+if it is not new then it is old .
+when something is not new it is old .
+one word means new and its opposite means old .
+the opposite of wet is dry .
+wet is the opposite of dry .
+wet and dry are opposites .
+if it is not wet then it is dry .
+when something is not wet it is dry .
+one word means wet and its opposite means dry .
+the opposite of dry is wet .
+dry is the opposite of wet .
+dry and wet are opposites .
+if it is not dry then it is wet .
+when something is not dry it is wet .
+one word means dry and its opposite means wet .
+the opposite of long is short .
+long is the opposite of short .
+long and short are opposites .
+if it is not long then it is short .
+when something is not long it is short .
+one word means long and its opposite means short .
+the opposite of short is long .
+short is the opposite of long .
+short and long are opposites .
+if it is not short then it is long .
+when something is not short it is long .
+one word means short and its opposite means long .
+the opposite of strong is weak .
+strong is the opposite of weak .
+strong and weak are opposites .
+if it is not strong then it is weak .
+when something is not strong it is weak .
+one word means strong and its opposite means weak .
+the opposite of weak is strong .
+weak is the opposite of strong .
+weak and strong are opposites .
+if it is not weak then it is strong .
+when something is not weak it is strong .
+one word means weak and its opposite means strong .
+the opposite of early is late .
+early is the opposite of late .
+early and late are opposites .
+if it is not early then it is late .
+when something is not early it is late .
+one word means early and its opposite means late .
+the opposite of late is early .
+late is the opposite of early .
+late and early are opposites .
+if it is not late then it is early .
+when something is not late it is early .
+one word means late and its opposite means early .
+the opposite of dark is bright .
+dark is the opposite of bright .
+dark and bright are opposites .
+if it is not dark then it is bright .
+when something is not dark it is bright .
+one word means dark and its opposite means bright .
+the opposite of bright is dark .
+bright is the opposite of dark .
+bright and dark are opposites .
+if it is not bright then it is dark .
+when something is not bright it is dark .
+one word means bright and its opposite means dark .
+the opposite of warm is cool .
+warm is the opposite of cool .
+warm and cool are opposites .
+if it is not warm then it is cool .
+when something is not warm it is cool .
+one word means warm and its opposite means cool .
+the opposite of cool is warm .
+cool is the opposite of warm .
+cool and warm are opposites .
+if it is not cool then it is warm .
+when something is not cool it is warm .
+one word means cool and its opposite means warm .
+the opposite of heavy is light .
+heavy is the opposite of light .
+heavy and light are opposites .
+if it is not heavy then it is light .
+when something is not heavy it is light .
+one word means heavy and its opposite means light .
+the opposite of light is heavy .
+light is the opposite of heavy .
+light and heavy are opposites .
+if it is not light then it is heavy .
+when something is not light it is heavy .
+one word means light and its opposite means heavy .
+the opposite of round is flat .
+round is the opposite of flat .
+round and flat are opposites .
+if it is not round then it is flat .
+when something is not round it is flat .
+one word means round and its opposite means flat .
+the opposite of flat is round .
+flat is the opposite of round .
+flat and round are opposites .
+if it is not flat then it is round .
+when something is not flat it is round .
+one word means flat and its opposite means round .
+the opposite of rich is poor .
+rich is the opposite of poor .
+rich and poor are opposites .
+if it is not rich then it is poor .
+when something is not rich it is poor .
+one word means rich and its opposite means poor .
+the opposite of poor is rich .
+poor is the opposite of rich .
+poor and rich are opposites .
+if it is not poor then it is rich .
+when something is not poor it is rich .
+one word means poor and its opposite means rich .
+the opposite of wide is narrow .
+wide is the opposite of narrow .
+wide and narrow are opposites .
+if it is not wide then it is narrow .
+when something is not wide it is narrow .
+one word means wide and its opposite means narrow .
+the opposite of narrow is wide .
+narrow is the opposite of wide .
+narrow and wide are opposites .
+if it is not narrow then it is wide .
+when something is not narrow it is wide .
+one word means narrow and its opposite means wide .
+the opposite of thick is thin .
+thick is the opposite of thin .
+thick and thin are opposites .
+if it is not thick then it is thin .
+when something is not thick it is thin .
+one word means thick and its opposite means thin .
+the opposite of thin is thick .
+thin is the opposite of thick .
+thin and thick are opposites .
+if it is not thin then it is thick .
+when something is not thin it is thick .
+one word means thin and its opposite means thick .
+the opposite of deep is shallow .
+deep is the opposite of shallow .
+deep and shallow are opposites .
+if it is not deep then it is shallow .
+when something is not deep it is shallow .
+one word means deep and its opposite means shallow .
+the opposite of shallow is deep .
+shallow is the opposite of deep .
+shallow and deep are opposites .
+if it is not shallow then it is deep .
+when something is not shallow it is deep .
+one word means shallow and its opposite means deep .
+the opposite of true is false .
+true is the opposite of false .
+true and false are opposites .
+if it is not true then it is false .
+when something is not true it is false .
+one word means true and its opposite means false .
+the opposite of false is true .
+false is the opposite of true .
+false and true are opposites .
+if it is not false then it is true .
+when something is not false it is true .
+one word means false and its opposite means true .
+cold water feels cool but hot water feels warm .
+an empty glass has nothing but a full glass has milk .
+a quiet room is calm but a loud room is noisy .
+a fast car is quick but a slow car is late .
+a soft pillow is not hard .
+a heavy box is not light .
+an early train is not late .
+a round plate is not flat .

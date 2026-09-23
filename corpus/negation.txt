@@ -1,0 +1,184 @@
+the sky is not green . it is yellow . the sky is yellow .
+the sky was not green . it was brown . so the sky is brown .
+the wall is not grey . it is brown . the wall is brown .
+the wall was not brown . it was grey . so the wall is grey .
+the cup is not brown . it is green . the cup is green .
+the cup was not blue . it was white . so the cup is white .
+the hat is not green . it is blue . the hat is blue .
+the hat was not white . it was grey . so the hat is grey .
+the car is not green . it is red . the car is red .
+the car was not blue . it was grey . so the car is grey .
+the shirt is not brown . it is black . the shirt is black .
+the shirt was not black . it was green . so the shirt is green .
+the roof is not grey . it is yellow . the roof is yellow .
+the roof was not black . it was yellow . so the roof is yellow .
+the chair is not grey . it is black . the chair is black .
+the chair was not green . it was black . so the chair is black .
+the fence is not black . it is blue . the fence is blue .
+the fence was not white . it was yellow . so the fence is yellow .
+the boat is not brown . it is green . the boat is green .
+the boat was not white . it was blue . so the boat is blue .
+the kite is not black . it is yellow . the kite is yellow .
+the kite was not brown . it was red . so the kite is red .
+the lamp is not green . it is red . the lamp is red .
+the lamp was not brown . it was grey . so the lamp is grey .
+the sky is not green . it is red . the sky is red .
+the sky was not brown . it was red . so the sky is red .
+the wall is not white . it is grey . the wall is grey .
+the wall was not grey . it was white . so the wall is white .
+the cup is not brown . it is white . the cup is white .
+the cup was not blue . it was white . so the cup is white .
+the hat is not red . it is grey . the hat is grey .
+the hat was not yellow . it was grey . so the hat is grey .
+the car is not blue . it is black . the car is black .
+the car was not green . it was black . so the car is black .
+the shirt is not grey . it is red . the shirt is red .
+the shirt was not yellow . it was red . so the shirt is red .
+the roof is not red . it is grey . the roof is grey .
+the roof was not green . it was black . so the roof is black .
+the chair is not brown . it is black . the chair is black .
+the chair was not brown . it was black . so the chair is black .
+the fence is not white . it is brown . the fence is brown .
+the fence was not grey . it was black . so the fence is black .
+the boat is not white . it is brown . the boat is brown .
+the boat was not brown . it was grey . so the boat is grey .
+the kite is not grey . it is red . the kite is red .
+the kite was not red . it was yellow . so the kite is yellow .
+the lamp is not white . it is blue . the lamp is blue .
+the lamp was not blue . it was green . so the lamp is green .
+the sky is not brown . it is grey . the sky is grey .
+the sky was not brown . it was yellow . so the sky is yellow .
+the wall is not red . it is yellow . the wall is yellow .
+the wall was not brown . it was red . so the wall is red .
+the cup is not brown . it is grey . the cup is grey .
+the cup was not grey . it was white . so the cup is white .
+the hat is not blue . it is grey . the hat is grey .
+the hat was not white . it was yellow . so the hat is yellow .
+the car is not brown . it is grey . the car is grey .
+the car was not green . it was red . so the car is red .
+the shirt is not white . it is red . the shirt is red .
+the shirt was not yellow . it was red . so the shirt is red .
+the roof is not brown . it is blue . the roof is blue .
+the roof was not white . it was red . so the roof is red .
+the chair is not black . it is blue . the chair is blue .
+the chair was not red . it was black . so the chair is black .
+the fence is not grey . it is green . the fence is green .
+the fence was not brown . it was blue . so the fence is blue .
+the boat is not green . it is blue . the boat is blue .
+the boat was not brown . it was white . so the boat is white .
+the kite is not green . it is white . the kite is white .
+the kite was not red . it was green . so the kite is green .
+the lamp is not green . it is white . the lamp is white .
+the lamp was not blue . it was grey . so the lamp is grey .
+the sky is not white . it is black . the sky is black .
+the sky was not black . it was green . so the sky is green .
+the wall is not blue . it is yellow . the wall is yellow .
+the wall was not brown . it was black . so the wall is black .
+the cup is not yellow . it is white . the cup is white .
+the cup was not red . it was brown . so the cup is brown .
+the hat is not yellow . it is white . the hat is white .
+the hat was not white . it was blue . so the hat is blue .
+the car is not grey . it is black . the car is black .
+the car was not yellow . it was green . so the car is green .
+the shirt is not white . it is brown . the shirt is brown .
+the shirt was not grey . it was red . so the shirt is red .
+the roof is not yellow . it is white . the roof is white .
+the roof was not red . it was brown . so the roof is brown .
+the chair is not blue . it is brown . the chair is brown .
+the chair was not grey . it was blue . so the chair is blue .
+the fence is not blue . it is grey . the fence is grey .
+the fence was not black . it was brown . so the fence is brown .
+the boat is not black . it is grey . the boat is grey .
+the boat was not blue . it was brown . so the boat is brown .
+the kite is not brown . it is yellow . the kite is yellow .
+the kite was not white . it was red . so the kite is red .
+the lamp is not black . it is blue . the lamp is blue .
+the lamp was not brown . it was red . so the lamp is red .
+the window is not wet . it is dry . the window is dry .
+the gate is not wet . it is dry . the gate is dry .
+the shop is not closed . it is open . the shop is open .
+the drawer is not closed . it is open . the drawer is open .
+the jar is not wet . it is dry . the jar is dry .
+the case is not wet . it is dry . the case is dry .
+the tent is not closed . it is open . the tent is open .
+the book is not full . it is empty . the book is empty .
+the window is not wet . it is dry . the window is dry .
+the gate is not wide . it is narrow . the gate is narrow .
+the shop is not full . it is empty . the shop is empty .
+the drawer is not wet . it is dry . the drawer is dry .
+the jar is not closed . it is open . the jar is open .
+the case is not clean . it is dirty . the case is dirty .
+the tent is not clean . it is dirty . the tent is dirty .
+the book is not open . it is closed . the book is closed .
+the window is not wet . it is dry . the window is dry .
+the gate is not full . it is empty . the gate is empty .
+the shop is not open . it is closed . the shop is closed .
+the drawer is not closed . it is open . the drawer is open .
+the jar is not clean . it is dirty . the jar is dirty .
+the case is not closed . it is open . the case is open .
+the tent is not open . it is closed . the tent is closed .
+the book is not clean . it is dirty . the book is dirty .
+sam did not buy apples . sam bought pears . sam bought pears .
+mia did not choose cake . mia chose bread . mia chose bread .
+leo did not buy cake . leo bought bread . leo bought bread .
+nora did not pick tea . nora picked milk . nora picked milk .
+omar did not pick soda . omar picked milk . omar picked milk .
+ella did not choose tea . ella chose milk . ella chose milk .
+finn did not choose water . finn chose tea . finn chose tea .
+iris did not take rice . iris took bread . iris took bread .
+hugo did not pick rice . hugo picked bread . hugo picked bread .
+lena did not buy rice . lena bought bread . lena bought bread .
+theo did not take rice . theo took bread . theo took bread .
+ruby did not take tea . ruby took milk . ruby took milk .
+sam did not take tea . sam took milk . sam took milk .
+mia did not order cake . mia ordered bread . mia ordered bread .
+leo did not take rice . leo took bread . leo took bread .
+nora did not choose cake . nora chose bread . nora chose bread .
+omar did not pick pasta . omar picked rice . omar picked rice .
+ella did not order cake . ella ordered bread . ella ordered bread .
+finn did not pick juice . finn picked milk . finn picked milk .
+iris did not take apples . iris took pears . iris took pears .
+hugo did not choose juice . hugo chose milk . hugo chose milk .
+lena did not buy soda . lena bought milk . lena bought milk .
+theo did not order juice . theo ordered milk . theo ordered milk .
+ruby did not take water . ruby took tea . ruby took tea .
+sam did not pick rice . sam picked bread . sam picked bread .
+mia did not choose water . mia chose tea . mia chose tea .
+leo did not take water . leo took milk . leo took milk .
+nora did not take tea . nora took milk . nora took milk .
+omar did not pick apples . omar picked pears . omar picked pears .
+ella did not choose apples . ella chose pears . ella chose pears .
+finn did not pick juice . finn picked milk . finn picked milk .
+iris did not pick bread . iris picked rice . iris picked rice .
+hugo did not choose coffee . hugo chose tea . hugo chose tea .
+lena did not take coffee . lena took tea . lena took tea .
+theo did not take coffee . theo took tea . theo took tea .
+ruby did not pick water . ruby picked tea . ruby picked tea .
+the sky is not yellow . it is blue . the sky is blue .
+the sea is not green . it is blue . the sea is blue .
+the door is not brown . it is blue . the door is blue .
+the coat is not red . it is blue . the coat is blue .
+the sign is not green . it is blue . the sign is blue .
+the ball is not white . it is blue . the ball is blue .
+the box is not yellow . it is blue . the box is blue .
+theo did not buy tea . theo bought milk . theo bought milk .
+ruby did not buy tea . ruby bought milk . ruby bought milk .
+hugo did not buy water . hugo bought milk . hugo bought milk .
+lena did not buy juice . lena bought milk . lena bought milk .
+iris did not buy tea . iris bought milk . iris bought milk .
+finn did not buy coffee . finn bought milk . finn bought milk .
+nora did not buy water . nora bought milk . nora bought milk .
+the window is not open . it is closed . the window is closed .
+the gate is not open . it is closed . the gate is closed .
+the shop is not open . it is closed . the shop is closed .
+the drawer is not open . it is closed . the drawer is closed .
+the jar is not open . it is closed . the jar is closed .
+the case is not open . it is closed . the case is closed .
+the lid is not open . it is closed . the lid is closed .
+red green yellow and blue are colors .
+milk and tea and juice are drinks .
+rice and bread and cake are foods .
+an open door is not closed .
+a closed gate is not open .
+a wide road is not narrow .
+the missing key is not here .

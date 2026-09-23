@@ -1,0 +1,79 @@
+[
+  {
+    "label": "original eval story",
+    "prompt": "the box is not red . it is blue . the box is",
+    "choice_probabilities": {
+      "green": 0.0566,
+      "yellow": 0.0934,
+      "blue": 0.1472,
+      "red": 0.0526
+    },
+    "top_choice": "blue"
+  },
+  {
+    "label": "FLIPPED: not blue, it is red",
+    "prompt": "the box is not blue . it is red . the box is",
+    "choice_probabilities": {
+      "green": 0.0591,
+      "yellow": 0.1021,
+      "blue": 0.1534,
+      "red": 0.0535
+    },
+    "top_choice": "blue"
+  },
+  {
+    "label": "FLIPPED: not blue, it is green",
+    "prompt": "the box is not blue . it is green . the box is",
+    "choice_probabilities": {
+      "green": 0.0475,
+      "yellow": 0.0904,
+      "blue": 0.1455,
+      "red": 0.0457
+    },
+    "top_choice": "blue"
+  },
+  {
+    "label": "no story at all",
+    "prompt": "the box is",
+    "choice_probabilities": {
+      "green": 0.0053,
+      "yellow": 0.0122,
+      "blue": 0.038,
+      "red": 0.0079
+    },
+    "top_choice": "blue"
+  },
+  {
+    "label": "original eval story",
+    "prompt": "the door is not open . it is closed . the door is",
+    "choice_probabilities": {
+      "closed": 0.1036,
+      "open": 0.0401,
+      "wide": 0.0013,
+      "missing": 0.0001
+    },
+    "top_choice": "closed"
+  },
+  {
+    "label": "FLIPPED: not closed, it is open",
+    "prompt": "the door is not closed . it is open . the door is",
+    "choice_probabilities": {
+      "closed": 0.1583,
+      "open": 0.1176,
+      "wide": 0.0032,
+      "missing": 0.0
+    },
+    "top_choice": "closed"
+  },
+  {
+    "label": "no story at all",
+    "prompt": "the door is",
+    "choice_probabilities": {
+      "closed": 0.0053,
+      "open": 0.0026,
+      "wide": 0.0005,
+      "missing": 0.0
+    },
+    "top_choice": "closed"
+  }
+]

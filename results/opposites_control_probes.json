@@ -1,0 +1,169 @@
+{
+  "candidates": [
+    "big",
+    "clean",
+    "cold",
+    "dirty",
+    "dry",
+    "empty",
+    "far",
+    "fast",
+    "full",
+    "happy",
+    "hot",
+    "long",
+    "near",
+    "poor",
+    "quiet",
+    "rich",
+    "sad",
+    "short",
+    "slow",
+    "small",
+    "strong",
+    "weak",
+    "wet"
+  ],
+  "rows": [
+    {
+      "stem": "cold",
+      "partner": "hot",
+      "partner_rank": 1,
+      "top": "hot"
+    },
+    {
+      "stem": "hot",
+      "partner": "cold",
+      "partner_rank": 1,
+      "top": "cold"
+    },
+    {
+      "stem": "full",
+      "partner": "empty",
+      "partner_rank": 1,
+      "top": "empty"
+    },
+    {
+      "stem": "empty",
+      "partner": "full",
+      "partner_rank": 2,
+      "top": "wet"
+    },
+    {
+      "stem": "big",
+      "partner": "small",
+      "partner_rank": 1,
+      "top": "small"
+    },
+    {
+      "stem": "small",
+      "partner": "big",
+      "partner_rank": 1,
+      "top": "big"
+    },
+    {
+      "stem": "fast",
+      "partner": "slow",
+      "partner_rank": 1,
+      "top": "slow"
+    },
+    {
+      "stem": "slow",
+      "partner": "fast",
+      "partner_rank": 1,
+      "top": "fast"
+    },
+    {
+      "stem": "happy",
+      "partner": "sad",
+      "partner_rank": 1,
+      "top": "sad"
+    },
+    {
+      "stem": "sad",
+      "partner": "happy",
+      "partner_rank": 1,
+      "top": "happy"
+    },
+    {
+      "stem": "clean",
+      "partner": "dirty",
+      "partner_rank": 1,
+      "top": "dirty"
+    },
+    {
+      "stem": "dirty",
+      "partner": "clean",
+      "partner_rank": 1,
+      "top": "clean"
+    },
+    {
+      "stem": "near",
+      "partner": "far",
+      "partner_rank": 1,
+      "top": "far"
+    },
+    {
+      "stem": "far",
+      "partner": "near",
+      "partner_rank": 1,
+      "top": "near"
+    },
+    {
+      "stem": "wet",
+      "partner": "dry",
+      "partner_rank": 1,
+      "top": "dry"
+    },
+    {
+      "stem": "dry",
+      "partner": "wet",
+      "partner_rank": 1,
+      "top": "wet"
+    },
+    {
+      "stem": "long",
+      "partner": "short",
+      "partner_rank": 1,
+      "top": "short"
+    },
+    {
+      "stem": "short",
+      "partner": "long",
+      "partner_rank": 1,
+      "top": "long"
+    },
+    {
+      "stem": "strong",
+      "partner": "weak",
+      "partner_rank": 1,
+      "top": "weak"
+    },
+    {
+      "stem": "weak",
+      "partner": "strong",
+      "partner_rank": 1,
+      "top": "strong"
+    },
+    {
+      "stem": "rich",
+      "partner": "poor",
+      "partner_rank": 2,
+      "top": "rich"
+    },
+    {
+      "stem": "poor",
+      "partner": "rich",
+      "partner_rank": 1,
+      "top": "rich"
+    },
+    {
+      "stem": "noisy",
+      "partner": "quiet",
+      "partner_rank": 1,
+      "top": "quiet"
+    }
+  ],
+  "top1": 21,
+  "n": 23
+}
